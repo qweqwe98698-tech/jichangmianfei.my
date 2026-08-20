@@ -1,45 +1,45 @@
 <template>
   <div
-    class="hero-promo-wrapper w-full max-w-[460px] mx-auto select-none"
+    class="hero-promo-wrapper w-full max-w-[480px] mx-auto select-none"
     @mousemove="handleMouseMove"
     @mouseleave="handleMouseLeave"
     :style="cardStyle"
   >
     <div class="relative rounded-2xl p-5 sm:p-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-blue-200/90 dark:border-blue-800/70 shadow-2xl shadow-blue-500/10 dark:shadow-black/40 overflow-hidden transition-all duration-200">
       <!-- 顶部环境与专线状态指示灯 -->
-      <div class="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
+      <div class="flex items-center justify-between pb-3.5 border-b border-slate-100 dark:border-slate-800">
         <div class="flex items-center gap-2">
-          <span class="relative flex h-2.5 w-2.5">
+          <span class="relative flex h-3 w-3">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
           </span>
-          <span class="text-xs font-bold text-slate-800 dark:text-slate-200 tracking-wide flex items-center gap-1.5">
+          <span class="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white tracking-wide flex items-center gap-2">
             <span>光速云 IEPL 专线</span>
-            <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-mono font-bold border border-emerald-200/60 dark:border-emerald-800/60">SLA 99.98%</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-mono font-bold border border-emerald-200/60 dark:border-emerald-800/60">SLA 99.98%</span>
           </span>
         </div>
-        <span class="text-[11px] px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900 font-medium">
-          2020年起运营
+        <span class="text-xs px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900 font-semibold">
+          2020年起稳定运营
         </span>
       </div>
 
       <!-- 核心实时速率仪表盘与动态波形 -->
       <div class="py-4">
-        <div class="flex items-baseline justify-between mb-1">
+        <div class="flex items-baseline justify-between mb-1.5">
           <div class="flex items-baseline gap-1.5">
             <span class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 dark:text-white tracking-tight">
               {{ currentSpeed }}
             </span>
-            <span class="text-xs sm:text-sm font-bold text-slate-500 dark:text-slate-400">Mbps ↓</span>
+            <span class="text-sm font-bold text-slate-500 dark:text-slate-400">Mbps ↓</span>
           </div>
-          <div class="flex items-center gap-2 text-xs">
+          <div class="flex items-center gap-3 text-xs sm:text-sm">
             <div class="text-right">
-              <span class="text-[10px] text-slate-400 block">专线延迟</span>
-              <span class="font-mono font-bold text-blue-600 dark:text-blue-400">{{ currentPing }} ms</span>
+              <span class="text-xs text-slate-400 font-medium block">专线延迟</span>
+              <span class="font-mono font-bold text-sm text-blue-600 dark:text-blue-400">{{ currentPing }} ms</span>
             </div>
-            <div class="text-right pl-2 border-l border-slate-200 dark:border-slate-800">
-              <span class="text-[10px] text-slate-400 block">丢包率</span>
-              <span class="font-mono font-bold text-emerald-600 dark:text-emerald-400">0.00%</span>
+            <div class="text-right pl-3 border-l border-slate-200 dark:border-slate-800">
+              <span class="text-xs text-slate-400 font-medium block">丢包率</span>
+              <span class="font-mono font-bold text-sm text-emerald-600 dark:text-emerald-400">0.00%</span>
             </div>
           </div>
         </div>
@@ -62,50 +62,50 @@
       </div>
 
       <!-- 活跃节点实时心跳轮播 -->
-      <div class="space-y-1.5 mb-4">
+      <div class="space-y-2 mb-4">
         <div
           v-for="(node, idx) in nodes"
           :key="idx"
           @click="activeNodeIndex = idx"
-          class="flex items-center justify-between p-2 rounded-lg text-xs transition-all cursor-pointer border"
+          class="flex items-center justify-between p-2.5 rounded-xl text-xs sm:text-sm transition-all cursor-pointer border"
           :class="activeNodeIndex === idx 
             ? 'bg-blue-50/90 dark:bg-blue-950/60 border-blue-300 dark:border-blue-700 shadow-xs' 
             : 'bg-slate-50/60 dark:bg-slate-800/40 border-transparent hover:border-slate-200 dark:hover:border-slate-700'"
         >
           <div class="flex items-center gap-2">
-            <span class="text-sm">{{ node.flag }}</span>
-            <span class="font-medium text-slate-800 dark:text-slate-200">{{ node.name }}</span>
-            <span class="text-[10px] px-1.5 py-0.5 rounded bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200/60 dark:border-slate-800">
+            <span class="text-base">{{ node.flag }}</span>
+            <span class="font-semibold text-slate-800 dark:text-slate-200">{{ node.name }}</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 font-medium border border-slate-200/80 dark:border-slate-800">
               {{ node.tag }}
             </span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="font-mono text-emerald-600 dark:text-emerald-400 font-semibold">{{ node.ping }}ms</span>
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">{{ node.ping }}ms</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
           </div>
         </div>
       </div>
 
       <!-- 优惠码与转化 CTA 区域 -->
-      <div class="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2.5">
-        <div class="flex items-center justify-between bg-blue-50/90 dark:bg-blue-950/50 px-3 py-2 rounded-xl border border-blue-200/80 dark:border-blue-900/60">
-          <div class="flex items-center gap-1.5 text-xs text-blue-950 dark:text-blue-200">
-            <span class="text-rose-500 font-bold">8折码:</span>
-            <code class="font-mono font-bold text-blue-700 dark:text-blue-300 bg-white dark:bg-slate-900 px-2 py-0.5 rounded border border-blue-300 dark:border-blue-700 select-all">AMM</code>
+      <div class="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-3">
+        <div class="flex items-center justify-between bg-blue-50/90 dark:bg-blue-950/50 px-3.5 py-2.5 rounded-xl border border-blue-200/80 dark:border-blue-900/60">
+          <div class="flex items-center gap-2 text-xs sm:text-sm text-blue-950 dark:text-blue-200 font-medium">
+            <span class="text-rose-600 font-bold">8折码:</span>
+            <code class="font-mono font-extrabold text-blue-700 dark:text-blue-300 bg-white dark:bg-slate-900 px-2.5 py-0.5 rounded border border-blue-300 dark:border-blue-700 text-sm select-all">AMM</code>
           </div>
           <button
             type="button"
             @click="copyCoupon"
-            class="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-0 p-0"
+            class="text-xs sm:text-sm font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-0 p-0"
           >
             {{ copied ? '✓ 已复制!' : '点击复制' }}
           </button>
         </div>
 
         <div class="flex items-center justify-between gap-3">
-          <div class="text-xs">
-            <span class="text-slate-500 dark:text-slate-400 block text-[11px]">入门套餐年付折合</span>
-            <span class="font-bold text-rose-600 dark:text-rose-400 text-base font-mono">7.5 元/月</span>
+          <div class="text-xs sm:text-sm">
+            <span class="text-slate-500 dark:text-slate-400 block text-xs font-medium">入门套餐年付折合</span>
+            <span class="font-extrabold text-rose-600 dark:text-rose-400 text-base sm:text-lg font-mono">7.5 元/月</span>
           </div>
 
           <a
@@ -115,8 +115,8 @@
             class="hero-cta-btn"
           >
             <span>直达光速云官网</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </a>
         </div>
@@ -206,12 +206,12 @@ onUnmounted(() => {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 6px !important;
-  padding: 10px 18px !important;
+  gap: 8px !important;
+  padding: 12px 20px !important;
   border-radius: 12px !important;
   background: linear-gradient(135deg, #0c87eb 0%, #026bc9 100%) !important;
   color: #ffffff !important;
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-weight: 700 !important;
   text-decoration: none !important;
   box-shadow: 0 4px 14px rgba(12, 135, 235, 0.35) !important;
@@ -220,11 +220,19 @@ onUnmounted(() => {
   border: none !important;
 }
 
+.hero-cta-btn span {
+  color: #ffffff !important;
+}
+
+.hero-cta-btn svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
 .hero-cta-btn:hover {
   background: linear-gradient(135deg, #026bc9 0%, #0355a3 100%) !important;
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(12, 135, 235, 0.45) !important;
-  color: #ffffff !important;
 }
 
 .hero-cta-btn:active {
