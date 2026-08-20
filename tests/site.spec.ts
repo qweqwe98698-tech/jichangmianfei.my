@@ -63,8 +63,8 @@ test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
     const heading = page.locator('h1')
     await expect(heading).toContainText('节点全部超时')
 
-    // 验证排错决策树组件
-    const troubleBox = page.locator('text=节点超时现象速查与解决方案')
+    // 验证排错决策树
+    const troubleBox = page.locator('text=节点全红故障诊断决策树').first()
     await expect(troubleBox).toBeVisible()
   })
 
@@ -132,7 +132,7 @@ test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
     // 验证 AI 大模型网络访问指南
     await page.goto('/knowledge/ai-models-network-guide')
     await expect(page).toHaveTitle(/AI 大模型/)
-    const aiBox = page.locator('text=AI 访问报错 4 大黄金排查方案')
+    const aiBox = page.locator('text=AI 访问报错 4 大黄金排查方案').first()
     await expect(aiBox).toBeVisible()
   })
 

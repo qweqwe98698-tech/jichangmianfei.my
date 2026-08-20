@@ -33,7 +33,9 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: '机场免费' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:image', content: 'https://jichangmianfei.my/logo.svg' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: 'https://jichangmianfei.my/logo.svg' }],
     [
       'script',
       { type: 'application/ld+json' },
