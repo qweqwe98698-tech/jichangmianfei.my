@@ -135,4 +135,34 @@ test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
     const aiBox = page.locator('text=AI 访问报错 4 大黄金排查方案')
     await expect(aiBox).toBeVisible()
   })
+
+  test('在线交互式流量测算器工具页面功能与计算逻辑验证', async ({ page }) => {
+    await page.goto('/tools/traffic-calculator')
+    await expect(page).toHaveTitle(/流量消耗与月成本智能测算器/)
+
+    // 验证测算器标题与推荐卡片
+    const calcTitle = page.locator('text=机场流量消耗与月成本智能测算器')
+    await expect(calcTitle.first()).toBeVisible()
+    const resultText = page.locator('text=测算您的月度总流量需求约：')
+    await expect(resultText).toBeVisible()
+  })
+
+  test('高级客户端进阶教程与软路由页面渲染验证', async ({ page }) => {
+    await page.goto('/tutorial/openclash-router')
+    await expect(page).toHaveTitle(/OpenClash/)
+    const heading = page.locator('h1')
+    await expect(heading).toContainText('OpenClash')
+  })
+
+  test('开发者排障中心 GitHub 与 Docker 加速页面验证', async ({ page }) => {
+    await page.goto('/troubleshooting/github-speedup')
+    await expect(page).toHaveTitle(/GitHub/)
+    const gitHeading = page.locator('h1')
+    await expect(gitHeading).toContainText('GitHub')
+
+    await page.goto('/troubleshooting/docker-hub-pull-failed')
+    await expect(page).toHaveTitle(/Docker/)
+    const dockerHeading = page.locator('h1')
+    await expect(dockerHeading).toContainText('Docker')
+  })
 })

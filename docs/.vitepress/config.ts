@@ -15,7 +15,7 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-    ['meta', { name: 'keywords', content: '免费机场,免费节点,免费订阅,机场推荐,Clash免费节点,小火箭免费节点,v2rayN节点,机场评测,光速云' }],
+    ['meta', { name: 'keywords', content: '免费机场,免费节点,免费订阅,机场推荐,Clash免费节点,小火箭免费节点,v2rayN节点,机场评测,光速云,OpenClash,Mihomo,sing-box' }],
     ['meta', { name: 'author', content: '机场免费团队' }],
     ['meta', { property: 'og:site_name', content: '机场免费' }],
     ['meta', { property: 'og:type', content: 'website' }],
@@ -99,7 +99,7 @@ export default defineConfig({
           { text: '知识百科与选型决策总览 (Pillar)', link: '/knowledge/' },
           { text: 'VPN、代理、加速器与机场的区别', link: '/knowledge/vpn-proxy-accelerator-diff' },
           { text: 'SS/VMess/VLESS/Trojan/Hysteria2 协议横评', link: '/knowledge/protocols-explained' },
-          { text: 'IEPL/IPLC 专线与公网中转深度解析', link: '/knowledge/iepl-vs-relay-lines' },
+          { text: 'IEPL/IPLC 专线与公网中转解析', link: '/knowledge/iepl-vs-relay-lines' },
           { text: '海外 AI 大模型全景网络访问指南', link: '/knowledge/ai-models-network-guide' },
           { text: '海外流媒体全解锁配置指南', link: '/knowledge/streaming-unlock-guide' },
           { text: '外贸跨境电商防关联网络方案', link: '/knowledge/cross-border-ecommerce' },
@@ -123,9 +123,14 @@ export default defineConfig({
         items: [
           { text: '全平台客户端安装总览', link: '/tutorial/' },
           { text: 'Clash Verge Rev 电脑端配置教程', link: '/tutorial/clash-verge-rev' },
+          { text: 'Clash 进阶分流规则集 (ACL4SSR)', link: '/tutorial/clash-verge-rulesets' },
+          { text: 'Mihomo 内核与 TUN 模式指南', link: '/tutorial/mihomo-meta-core' },
+          { text: 'sing-box 进阶配置与 Hysteria 2', link: '/tutorial/sing-box-advanced' },
+          { text: 'iOS Loon 与 Quantumult X 实战', link: '/tutorial/ios-loon-quanx' },
+          { text: 'Android 客户端双雄 (CMFA/v2rayNG)', link: '/tutorial/android-cmfa-v2rayng' },
+          { text: 'OpenClash 软路由全屋加速配置', link: '/tutorial/openclash-router' },
           { text: 'Windows v2rayN 客户端实战', link: '/tutorial/v2rayn-windows' },
           { text: 'iOS Shadowrocket (小火箭) 教程', link: '/tutorial/shadowrocket-ios' },
-          { text: 'sing-box 通用客户端配置教程', link: '/tutorial/sing-box' },
           { text: '订阅链接转换与格式详解', link: '/tutorial/sub-conversion' }
         ]
       },
@@ -133,6 +138,12 @@ export default defineConfig({
         text: '故障排查',
         items: [
           { text: '网络故障诊断中心总览', link: '/troubleshooting/' },
+          { text: 'GitHub 打不开/克隆极慢排查', link: '/troubleshooting/github-speedup' },
+          { text: 'Docker Hub 镜像拉取超时修复', link: '/troubleshooting/docker-hub-pull-failed' },
+          { text: '全语言包管理器代理 (npm/pip/brew)', link: '/troubleshooting/dev-package-managers' },
+          { text: 'Steam 101/105 错误排查与联机', link: '/troubleshooting/steam-101-105-error' },
+          { text: 'DNS 泄漏深度检测与 DoH 配置', link: '/troubleshooting/dns-leak-test' },
+          { text: '代理关闭后断网 (ERR_PROXY) 修复', link: '/troubleshooting/err-proxy-connection-failed' },
           { text: '国外网站打不开/连接超时排查', link: '/troubleshooting/overseas-sites-timeout' },
           { text: '节点全部超时/全红故障解决', link: '/troubleshooting/node-all-timeout' },
           { text: '订阅更新失败/导入错误排查', link: '/troubleshooting/sub-update-failed' },
@@ -140,8 +151,8 @@ export default defineConfig({
           { text: 'ChatGPT / Claude 访问受限排查', link: '/troubleshooting/ai-access-issues' }
         ]
       },
-      { text: '光速云实测', link: '/product/guangshuyun' },
-      { text: '关于与合规', link: '/about/disclaimer' }
+      { text: '流量测算器', link: '/tools/traffic-calculator' },
+      { text: '光速云实测', link: '/product/guangshuyun' }
     ],
 
     sidebar: {
@@ -184,6 +195,7 @@ export default defineConfig({
         {
           text: '落地与实战',
           items: [
+            { text: '流量消耗与月成本智能测算器', link: '/tools/traffic-calculator' },
             { text: '2026 稳定新手机场推荐清单', link: '/free-airport/recommendations' },
             { text: '全平台客户端配置实战', link: '/tutorial/' },
             { text: '网络故障诊断中心', link: '/troubleshooting/' }
@@ -217,9 +229,14 @@ export default defineConfig({
           items: [
             { text: '全平台代理客户端安装总览 (Pillar)', link: '/tutorial/' },
             { text: 'Clash Verge Rev 电脑端从零配置', link: '/tutorial/clash-verge-rev' },
+            { text: 'Clash 进阶分流规则集 (ACL4SSR)', link: '/tutorial/clash-verge-rulesets' },
+            { text: 'Mihomo 内核与 TUN 模式深度指南', link: '/tutorial/mihomo-meta-core' },
+            { text: 'sing-box 进阶配置与 Hysteria 2 调优', link: '/tutorial/sing-box-advanced' },
+            { text: 'iOS Loon 与 Quantumult X 实战指南', link: '/tutorial/ios-loon-quanx' },
+            { text: 'Android 客户端双雄 (CMFA/v2rayNG)', link: '/tutorial/android-cmfa-v2rayng' },
+            { text: 'OpenClash 软路由全屋加速配置', link: '/tutorial/openclash-router' },
             { text: 'Windows v2rayN 安装与核心配置', link: '/tutorial/v2rayn-windows' },
             { text: 'iOS Shadowrocket (小火箭) 完整配置', link: '/tutorial/shadowrocket-ios' },
-            { text: 'sing-box 通用客户端配置教程', link: '/tutorial/sing-box' },
             { text: '订阅链接格式解析与转换指南', link: '/tutorial/sub-conversion' }
           ]
         },
@@ -237,6 +254,12 @@ export default defineConfig({
           text: '网络故障诊断中心',
           items: [
             { text: '海外网络常见故障排查总览 (Pillar)', link: '/troubleshooting/' },
+            { text: 'GitHub 打不开/克隆极慢终极解决', link: '/troubleshooting/github-speedup' },
+            { text: 'Docker Hub 镜像拉取超时修复', link: '/troubleshooting/docker-hub-pull-failed' },
+            { text: '全语言包管理器代理 (npm/pip/brew)', link: '/troubleshooting/dev-package-managers' },
+            { text: 'Steam 101/105 错误排查与联机', link: '/troubleshooting/steam-101-105-error' },
+            { text: 'DNS 泄漏深度检测与 DoH 配置', link: '/troubleshooting/dns-leak-test' },
+            { text: '代理关闭后断网 (ERR_PROXY) 修复', link: '/troubleshooting/err-proxy-connection-failed' },
             { text: '国外网站打不开/连接超时排查', link: '/troubleshooting/overseas-sites-timeout' },
             { text: '节点全部超时/全红/TIMEOUT 排查', link: '/troubleshooting/node-all-timeout' },
             { text: '订阅更新失败/导入错误解决', link: '/troubleshooting/sub-update-failed' },
@@ -250,6 +273,21 @@ export default defineConfig({
             { text: '免费 vs 付费机场稳定性对比', link: '/free-airport/free-vs-paid' },
             { text: '2026 稳定新手机场实测清单', link: '/free-airport/recommendations' },
             { text: '【光速云】套餐与网络规格', link: '/product/guangshuyun' }
+          ]
+        }
+      ],
+      '/tools/': [
+        {
+          text: '网络实用工具箱',
+          items: [
+            { text: '机场流量消耗与月成本智能测算器', link: '/tools/traffic-calculator' }
+          ]
+        },
+        {
+          text: '核心推荐',
+          items: [
+            { text: '2026 稳定新手机场推荐清单', link: '/free-airport/recommendations' },
+            { text: '【光速云】真实评测与测速长图', link: '/product/guangshuyun' }
           ]
         }
       ],

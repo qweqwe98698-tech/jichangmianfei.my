@@ -12,6 +12,7 @@ import SpeedTestTable from './components/SpeedTestTable.vue'
 import TroubleshootingBox from './components/TroubleshootingBox.vue'
 import MobileStickyBar from './components/MobileStickyBar.vue'
 import HeroPromoCard from './components/HeroPromoCard.vue'
+import TrafficCalculator from './components/TrafficCalculator.vue'
 
 export default {
   extends: DefaultTheme,
@@ -31,5 +32,6 @@ export default {
     app.component('TroubleshootingBox', TroubleshootingBox)
     app.component('MobileStickyBar', MobileStickyBar)
     app.component('HeroPromoCard', HeroPromoCard)
+    app.component('TrafficCalculator', TrafficCalculator)
   }
 } satisfies Theme
