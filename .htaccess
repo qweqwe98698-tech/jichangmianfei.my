@@ -1,30 +1,71 @@
 # ==============================================================================
-# Apache 静态站点生产部署优化规则 - jichangmianfei.my
+# Apache 生产部署优化与 SEO 规范化规则 - jichangmianfei.my
 # ==============================================================================
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # 1. VitePress Clean URLs 规则支持 (.html 自动重写)
+  # 1. 强制 HTTPS 301 永久重定向
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 2. 强制非 www 规范化 (www -> non-www)
+  RewriteCond %{HTTP_HOST} ^www\.jichangmianfei\.my$ [NC]
+  RewriteRule ^(.*)$ https://jichangmianfei.my/$1 [L,R=301]
+
+  # 3. 规范化首页：去除 /index.html 避免重复内容
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+  RewriteRule ^index\.html$ / [R=301,L]
+
+  # 4. 规范化内页：访问 *.html 自动 301 重定向至 Clean URL 干净网址
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)\.html\ HTTP/
+  RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+  # 5. VitePress Clean URLs 内部重写 (静默映射至对应的 .html 文件)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^(.*)$ $1.html [L]
 
-  # 2. 404 自定义页面重定向
+  # 6. 自定义 404 错误页面
   ErrorDocument 404 /404.html
 </IfModule>
 
+# ==============================================================================
+# Gzip / Brotli 压缩优化 (提升 Google / Bing 首屏抓取与 TTFB 速度)
+# ==============================================================================
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
 
+# ==============================================================================
+# 静态资源长期缓存控制 (Cache-Control / Expires)
+# ==============================================================================
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
+
+  # HTML 文档保持最新即时验证
   ExpiresByType text/html "access plus 0 seconds"
+
+  # 静态资源 (CSS, JS, 字体, 图像, SVG) 长期缓存 1 年
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+</IfModule>
+
+# ==============================================================================
+# 安全响应头规范 (Security & Privacy Headers)
+# ==============================================================================
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>

@@ -8,6 +8,19 @@ export default defineConfig({
   base: '/',
   cleanUrls: true,
   lastUpdated: true,
+
+  transformPageData(pageData) {
+    const cleanPath = pageData.relativePath
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '')
+    const canonicalUrl = `https://jichangmianfei.my/${cleanPath}`
+    
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl }
+    ])
+  },
   
   sitemap: {
     hostname: 'https://jichangmianfei.my'
