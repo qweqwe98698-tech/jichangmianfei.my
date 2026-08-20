@@ -21,7 +21,6 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    // 全局基础 Organization 与 WebSite 结构化数据
     [
       'script',
       { type: 'application/ld+json' },
@@ -95,6 +94,20 @@ export default defineConfig({
         ]
       },
       {
+        text: '知识百科',
+        items: [
+          { text: '知识百科与选型决策总览 (Pillar)', link: '/knowledge/' },
+          { text: 'VPN、代理、加速器与机场的区别', link: '/knowledge/vpn-proxy-accelerator-diff' },
+          { text: 'SS/VMess/VLESS/Trojan/Hysteria2 协议横评', link: '/knowledge/protocols-explained' },
+          { text: 'IEPL/IPLC 专线与公网中转深度解析', link: '/knowledge/iepl-vs-relay-lines' },
+          { text: '海外 AI 大模型全景网络访问指南', link: '/knowledge/ai-models-network-guide' },
+          { text: '海外流媒体全解锁配置指南', link: '/knowledge/streaming-unlock-guide' },
+          { text: '外贸跨境电商防关联网络方案', link: '/knowledge/cross-border-ecommerce' },
+          { text: '流量倍率与计费重置避坑指南', link: '/knowledge/multiplier-and-billing' },
+          { text: '全球节点地区选型全景图', link: '/knowledge/global-nodes-selection' }
+        ]
+      },
+      {
         text: '免费节点与订阅',
         items: [
           { text: '免费节点获取与使用总览', link: '/free-node/' },
@@ -147,9 +160,33 @@ export default defineConfig({
         {
           text: '相关进阶指南',
           items: [
+            { text: 'VPN、代理、加速器与机场区别', link: '/knowledge/vpn-proxy-accelerator-diff' },
             { text: '全平台客户端安装教程', link: '/tutorial/' },
-            { text: '节点全部超时故障排查', link: '/troubleshooting/node-all-timeout' },
             { text: '【光速云】套餐与实测详情', link: '/product/guangshuyun' }
+          ]
+        }
+      ],
+      '/knowledge/': [
+        {
+          text: '网络知识百科与选型决策',
+          items: [
+            { text: '知识百科与选型决策总览 (Pillar)', link: '/knowledge/' },
+            { text: 'VPN、代理、加速器与机场区别', link: '/knowledge/vpn-proxy-accelerator-diff' },
+            { text: 'SS/VMess/VLESS/Trojan/Hysteria2 协议横评', link: '/knowledge/protocols-explained' },
+            { text: 'IEPL/IPLC 专线与公网中转解析', link: '/knowledge/iepl-vs-relay-lines' },
+            { text: '海外 AI 大模型网络访问指南', link: '/knowledge/ai-models-network-guide' },
+            { text: '海外流媒体全解锁配置指南', link: '/knowledge/streaming-unlock-guide' },
+            { text: '外贸跨境电商网络方案', link: '/knowledge/cross-border-ecommerce' },
+            { text: '流量倍率与计费重置避坑', link: '/knowledge/multiplier-and-billing' },
+            { text: '全球代理节点地区选型全景图', link: '/knowledge/global-nodes-selection' }
+          ]
+        },
+        {
+          text: '落地与实战',
+          items: [
+            { text: '2026 稳定新手机场推荐清单', link: '/free-airport/recommendations' },
+            { text: '全平台客户端配置实战', link: '/tutorial/' },
+            { text: '网络故障诊断中心', link: '/troubleshooting/' }
           ]
         }
       ],

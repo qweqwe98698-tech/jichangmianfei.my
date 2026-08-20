@@ -114,4 +114,25 @@ test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
     await expect(promoCard).toContainText('AMM')
     await expect(promoCard).toContainText('7.5 元/月')
   })
+
+  test('知识百科 Pillar 与深度决策页面加载与内链闭环验证', async ({ page }) => {
+    await page.goto('/knowledge/')
+    await expect(page).toHaveTitle(/知识百科/)
+
+    // 验证 QuickAnswer 与子专题链接
+    const quickAnswer = page.locator('text=核心知识全景')
+    await expect(quickAnswer).toBeVisible()
+
+    // 验证进入协议深度横评页
+    await page.goto('/knowledge/protocols-explained')
+    await expect(page).toHaveTitle(/协议深度横评/)
+    const vlessText = page.locator('h3', { hasText: 'VLESS 协议：现代代理的“轻量化王者”' })
+    await expect(vlessText).toBeVisible()
+
+    // 验证 AI 大模型网络访问指南
+    await page.goto('/knowledge/ai-models-network-guide')
+    await expect(page).toHaveTitle(/AI 大模型/)
+    const aiBox = page.locator('text=AI 访问报错 4 大黄金排查方案')
+    await expect(aiBox).toBeVisible()
+  })
 })
