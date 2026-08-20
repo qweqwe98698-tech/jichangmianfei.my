@@ -9,6 +9,10 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
+  vite: {
+    publicDir: 'public'
+  },
+
   transformPageData(pageData) {
     const cleanPath = pageData.relativePath
       .replace(/index\.md$/, '')
