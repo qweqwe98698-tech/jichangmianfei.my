@@ -55,6 +55,31 @@
   color: #ffffff !important;
 }
 
+/* 强制消除 Markdown (.vp-doc) 内部所有定制组件按钮的蓝色/下划线污染 */
+.vp-doc a.brand-btn,
+.vp-doc a.topic-btn,
+.vp-doc a.hero-cta-btn,
+.vp-doc a.sticky-cta-btn,
+a.brand-btn,
+a.topic-btn,
+a.hero-cta-btn,
+a.sticky-cta-btn {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.vp-doc a.brand-btn *,
+.vp-doc a.topic-btn *,
+.vp-doc a.hero-cta-btn *,
+.vp-doc a.sticky-cta-btn *,
+a.brand-btn *,
+a.topic-btn *,
+a.hero-cta-btn *,
+a.sticky-cta-btn * {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
 /* 统一卡片与提示框样式 */
 .custom-card {
   border: 1px solid var(--vp-c-divider);

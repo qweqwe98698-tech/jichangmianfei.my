@@ -65,17 +65,17 @@
       </div>
     </div>
 
-    <!-- 触控友好的操作按钮区 (手机端全宽) -->
-    <div class="mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
+    <!-- 触控友好的操作按钮区 -->
+    <div class="mt-4 pt-3 border-t border-slate-200/70 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
       <a
         :href="affLink || 'https://sahude.gsyvipaff.com/#/?code=keqgvT5Y'"
         target="_blank"
         rel="noopener noreferrer"
-        class="w-full sm:w-auto text-center px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold text-sm shadow-sm transition-all no-underline inline-flex items-center justify-center gap-1.5 active:scale-[0.98]"
+        class="brand-btn"
       >
         <span>前往光速云官网直达开通 (优惠码: AMM)</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
         </svg>
       </a>
 
@@ -100,3 +100,50 @@ defineProps<{
   affLink?: string
 }>()
 </script>
+
+<style scoped>
+.brand-btn {
+  width: 100%;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #0c87eb 0%, #026bc9 100%) !important;
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(12, 135, 235, 0.35) !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.brand-btn span {
+  color: #ffffff !important;
+}
+
+.brand-btn svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.brand-btn:hover {
+  background: linear-gradient(135deg, #026bc9 0%, #0355a3 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(12, 135, 235, 0.45) !important;
+}
+
+.brand-btn:active {
+  transform: scale(0.98);
+}
+
+@media (min-width: 640px) {
+  .brand-btn {
+    width: auto !important;
+  }
+}
+</style>

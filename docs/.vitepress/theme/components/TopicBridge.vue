@@ -10,10 +10,10 @@
       <slot></slot>
     </div>
     <div v-if="targetLink && targetText" class="pl-0 sm:pl-6">
-      <a :href="targetLink" class="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white transition-all no-underline shadow-xs active:scale-[0.98]">
+      <a :href="targetLink" class="topic-btn">
         <span>{{ targetText }}</span>
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
         </svg>
       </a>
     </div>
@@ -27,3 +27,41 @@ defineProps<{
   targetText?: string
 }>()
 </script>
+
+<style scoped>
+.topic-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3) !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
+}
+
+.topic-btn span {
+  color: #ffffff !important;
+}
+
+.topic-btn svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.topic-btn:hover {
+  background: linear-gradient(135deg, #047857 0%, #065f46 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.topic-btn:active {
+  transform: scale(0.98);
+}
+</style>
