@@ -1,0 +1,91 @@
+import { test, expect } from '@playwright/test'
+
+test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
+  test('首页标题、Hero与导航元素正常加载', async ({ page }) => {
+    await page.goto('/')
+    await expect(page).toHaveTitle(/机场免费/)
+    
+    // 验证 Hero 标题
+    const heroTitle = page.locator('.VPHero .name')
+    await expect(heroTitle).toContainText('机场免费')
+
+    // 验证核心导航链接存在
+    const nav = page.locator('.VPNavBar')
+    await expect(nav).toBeVisible()
+    await expect(nav).toContainText('免费机场')
+    await expect(nav).toContainText('免费节点与订阅')
+    await expect(nav).toContainText('客户端教程')
+    await expect(nav).toContainText('故障排查')
+    await expect(nav).toContainText('光速云实测')
+  })
+
+  test('免费机场 Pillar 主题页深度内容与组件渲染验证', async ({ page }) => {
+    await page.goto('/free-airport/')
+    await expect(page).toHaveTitle(/免费机场/)
+
+    // 验证 QuickAnswer 组件渲染
+    const quickAnswer = page.locator('text=30秒快速解答')
+    await expect(quickAnswer).toBeVisible()
+
+    // 验证核心比较表格
+    const table = page.locator('table')
+    await expect(table.first()).toBeVisible()
+
+    // 验证 FAQ 交互组件
+    const faqQuestion = page.locator('text=免费机场真的可以一直永久使用吗？')
+    await expect(faqQuestion).toBeVisible()
+    await faqQuestion.click()
+
+    // 验证 BrandCard 转化卡片与自营披露
+    const brandCard = page.locator('text=自营品牌透明披露')
+    await expect(brandCard).toBeVisible()
+    const affLink = page.locator('a[href*="gsyvipaff.com"]')
+    await expect(affLink.first()).toBeVisible()
+  })
+
+  test('客户端教程页与代码块渲染验证', async ({ page }) => {
+    await page.goto('/tutorial/clash-verge-rev')
+    await expect(page).toHaveTitle(/Clash Verge Rev/)
+
+    // 验证标题与步骤
+    const heading = page.locator('h1')
+    await expect(heading).toContainText('Clash Verge Rev')
+
+    // 验证 TopicBridge 下一步引导组件
+    const topicBridge = page.locator('text=需要稳定不卡顿的高品质专线节点订阅')
+    await expect(topicBridge).toBeVisible()
+  })
+
+  test('网络故障排查中心与决策树验证', async ({ page }) => {
+    await page.goto('/troubleshooting/node-all-timeout')
+    await expect(page).toHaveTitle(/节点全部超时/)
+
+    const heading = page.locator('h1')
+    await expect(heading).toContainText('节点全部超时')
+
+    // 验证排错决策树组件
+    const troubleBox = page.locator('text=节点超时现象速查与解决方案')
+    await expect(troubleBox).toBeVisible()
+  })
+
+  test('光速云专属评测产品页正常加载', async ({ page }) => {
+    await page.goto('/product/guangshuyun')
+    await expect(page).toHaveTitle(/光速云/)
+
+    const heading = page.locator('h1')
+    await expect(heading).toContainText('光速云')
+
+    // 验证实测数据表格
+    const speedTable = page.locator('text=实测数据')
+    await expect(speedTable.first()).toBeVisible()
+  })
+
+  test('移动端视口 (Mobile Viewport) 响应式验证', async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 667 })
+    await page.goto('/')
+    
+    // 移动端菜单按钮可见
+    const mobileMenuBtn = page.locator('.VPNavBarHamburger')
+    await expect(mobileMenuBtn).toBeVisible()
+  })
+})

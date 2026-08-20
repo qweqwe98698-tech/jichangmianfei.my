@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="planeGrad" x1="6" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C87EB"/>
+      <stop offset="1" stop-color="#026BC9"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="12" y1="28" x2="36" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0EFFE"/>
+      <stop offset="1" stop-color="#BAE0FD"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Soft Circle -->
+  <circle cx="24" cy="24" r="22" fill="#F0F7FF"/>
+  <!-- Paper Plane Icon -->
+  <path d="M40 8L6 22L19 28L32 15L23 31L38 40L40 8Z" fill="url(#planeGrad)"/>
+  <path d="M19 28V37L24 32L19 28Z" fill="#0355A3"/>
+</svg>
