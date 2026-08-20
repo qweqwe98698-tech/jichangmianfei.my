@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs && node scripts/seo-check.mjs",
     "preview": "vitepress preview docs",
+    "seo:check": "node scripts/seo-check.mjs",
+    "indexnow": "node scripts/indexnow-ping.mjs",
     "test:e2e": "playwright test"
   },
   "keywords": [
