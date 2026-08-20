@@ -15,7 +15,7 @@
           </span>
           <span class="text-xs font-bold text-slate-800 dark:text-slate-200 tracking-wide flex items-center gap-1.5">
             <span>光速云 IEPL 专线</span>
-            <span class="text-[10px] px-1.5 py-0.2 rounded bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-mono border border-emerald-200/60 dark:border-emerald-800/60">SLA 99.98%</span>
+            <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 font-mono font-bold border border-emerald-200/60 dark:border-emerald-800/60">SLA 99.98%</span>
           </span>
         </div>
         <span class="text-[11px] px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900 font-medium">
@@ -30,7 +30,7 @@
             <span class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 dark:text-white tracking-tight">
               {{ currentSpeed }}
             </span>
-            <span class="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400">Mbps ↓</span>
+            <span class="text-xs sm:text-sm font-bold text-slate-500 dark:text-slate-400">Mbps ↓</span>
           </div>
           <div class="flex items-center gap-2 text-xs">
             <div class="text-right">
@@ -75,7 +75,7 @@
           <div class="flex items-center gap-2">
             <span class="text-sm">{{ node.flag }}</span>
             <span class="font-medium text-slate-800 dark:text-slate-200">{{ node.name }}</span>
-            <span class="text-[10px] px-1.5 py-0.2 rounded bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200/60 dark:border-slate-800">
+            <span class="text-[10px] px-1.5 py-0.5 rounded bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 border border-slate-200/60 dark:border-slate-800">
               {{ node.tag }}
             </span>
           </div>
@@ -88,7 +88,7 @@
 
       <!-- 优惠码与转化 CTA 区域 -->
       <div class="pt-3 border-t border-slate-100 dark:border-slate-800 space-y-2.5">
-        <div class="flex items-center justify-between bg-blue-50/80 dark:bg-blue-950/40 px-3 py-2 rounded-xl border border-blue-200/70 dark:border-blue-900/60">
+        <div class="flex items-center justify-between bg-blue-50/90 dark:bg-blue-950/50 px-3 py-2 rounded-xl border border-blue-200/80 dark:border-blue-900/60">
           <div class="flex items-center gap-1.5 text-xs text-blue-950 dark:text-blue-200">
             <span class="text-rose-500 font-bold">8折码:</span>
             <code class="font-mono font-bold text-blue-700 dark:text-blue-300 bg-white dark:bg-slate-900 px-2 py-0.5 rounded border border-blue-300 dark:border-blue-700 select-all">AMM</code>
@@ -96,7 +96,7 @@
           <button
             type="button"
             @click="copyCoupon"
-            class="text-[11px] font-semibold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-0 p-0"
+            class="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer bg-transparent border-0 p-0"
           >
             {{ copied ? '✓ 已复制!' : '点击复制' }}
           </button>
@@ -104,15 +104,15 @@
 
         <div class="flex items-center justify-between gap-3">
           <div class="text-xs">
-            <span class="text-slate-400 block text-[10px]">入门套餐年付折合</span>
-            <span class="font-bold text-rose-600 dark:text-rose-400 text-sm sm:text-base font-mono">7.5 元/月</span>
+            <span class="text-slate-500 dark:text-slate-400 block text-[11px]">入门套餐年付折合</span>
+            <span class="font-bold text-rose-600 dark:text-rose-400 text-base font-mono">7.5 元/月</span>
           </div>
 
           <a
             href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex-1 text-center py-2.5 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 active:scale-[0.98] text-white text-xs sm:text-sm font-bold shadow-md shadow-blue-500/20 transition-all no-underline inline-flex items-center justify-center gap-1"
+            class="hero-cta-btn"
           >
             <span>直达光速云官网</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,7 +148,6 @@ function handleMouseMove(e: MouseEvent) {
   const rect = card.getBoundingClientRect()
   const x = e.clientX - rect.left - rect.width / 2
   const y = e.clientY - rect.top - rect.height / 2
-  // 轻微的 3D 视差倾斜 (最大 6度)
   rotateX.value = -(y / (rect.height / 2)) * 5
   rotateY.value = (x / (rect.width / 2)) * 5
 }
@@ -168,14 +167,11 @@ const nodes = [
 let timer: number | null = null
 
 function updateMetrics() {
-  // 微小动态浮动模拟真实测速波形
   const speeds = ['576.8', '584.2', '591.0', '582.4', '579.5', '588.6']
   const pings = ['17.8', '18.4', '18.1', '19.0', '18.2', '18.5']
   const randomIdx = Math.floor(Math.random() * speeds.length)
   currentSpeed.value = speeds[randomIdx]
   currentPing.value = pings[randomIdx]
-
-  // 轮播切换节点高亮
   activeNodeIndex.value = (activeNodeIndex.value + 1) % nodes.length
 }
 
@@ -203,5 +199,35 @@ onUnmounted(() => {
 <style scoped>
 .hero-promo-wrapper {
   transform-style: preserve-3d;
+}
+
+.hero-cta-btn {
+  flex: 1;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 10px 18px !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #0c87eb 0%, #026bc9 100%) !important;
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(12, 135, 235, 0.35) !important;
+  transition: all 0.2s ease !important;
+  white-space: nowrap !important;
+  border: none !important;
+}
+
+.hero-cta-btn:hover {
+  background: linear-gradient(135deg, #026bc9 0%, #0355a3 100%) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(12, 135, 235, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.hero-cta-btn:active {
+  transform: scale(0.98);
 }
 </style>
