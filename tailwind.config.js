@@ -5,6 +5,9 @@ export default {
     './docs/.vitepress/**/*.{vue,js,ts,jsx,tsx}'
   ],
   darkMode: 'class',
+  corePlugins: {
+    preflight: false, // 禁用 Tailwind Preflight，防止破坏 VitePress 默认主题布局与导航栏
+  },
   theme: {
     extend: {
       colors: {
