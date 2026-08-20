@@ -5,6 +5,9 @@ hero:
   name: "机场免费"
   text: "2026 免费机场与节点测速评测指南"
   tagline: "从免费资源获取、客户端实操配置到网络故障排查与稳定机场选型，为您提供专业、客观、事实核验的网络代理知识库。"
+  image:
+    src: /logo.svg
+    alt: 光速云 IEPL 专线测速展示
   actions:
     - theme: brand
       text: 免费机场综合指南

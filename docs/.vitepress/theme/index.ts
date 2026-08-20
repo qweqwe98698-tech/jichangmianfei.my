@@ -11,12 +11,14 @@ import FaqAccordion from './components/FaqAccordion.vue'
 import SpeedTestTable from './components/SpeedTestTable.vue'
 import TroubleshootingBox from './components/TroubleshootingBox.vue'
 import MobileStickyBar from './components/MobileStickyBar.vue'
+import HeroPromoCard from './components/HeroPromoCard.vue'
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(MobileStickyBar)
+      'layout-bottom': () => h(MobileStickyBar),
+      'home-hero-image': () => h(HeroPromoCard)
     })
   },
   enhanceApp({ app }) {
@@ -28,5 +30,6 @@ export default {
     app.component('SpeedTestTable', SpeedTestTable)
     app.component('TroubleshootingBox', TroubleshootingBox)
     app.component('MobileStickyBar', MobileStickyBar)
+    app.component('HeroPromoCard', HeroPromoCard)
   }
 } satisfies Theme

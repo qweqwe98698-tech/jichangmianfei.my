@@ -100,4 +100,18 @@ test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
     const stickyBar = page.locator('text=光速云专线实测 / 直达')
     await expect(stickyBar).toBeVisible()
   })
+
+  test('首页 Hero 右侧光速云 3D 测速与心跳动态卡片渲染验证', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 })
+    await page.goto('/')
+
+    // 验证 Hero 右侧卡片状态与速率指示
+    const promoCard = page.locator('.hero-promo-wrapper')
+    await expect(promoCard).toBeVisible()
+    await expect(promoCard).toContainText('光速云 IEPL 专线')
+    await expect(promoCard).toContainText('Mbps ↓')
+    await expect(promoCard).toContainText('8折码:')
+    await expect(promoCard).toContainText('AMM')
+    await expect(promoCard).toContainText('7.5 元/月')
+  })
 })
