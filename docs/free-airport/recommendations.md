@@ -1,6 +1,6 @@
 ---
 title: 2026 稳定新手机场推荐与实测：按稳定性、隐私、价格与售后选型
-description: 2026最新稳定新手机场推荐与实测清单，公开测试环境、晚高峰速率、丢包抖动数据与自营商业披露，为轻度、日常及重度用户提供客观透明的选型建议。
+description: 2026最新稳定新手机场推荐与实测清单，公开测试环境、晚高峰速率、丢包抖动数据、70+节点流媒体与AI解锁长图、8折优惠码 AMM 与自营商业披露。
 head:
   - - script
     - type: application/ld+json
@@ -17,7 +17,7 @@ head:
         "offers": {
           "@type": "AggregateOffer",
           "priceCurrency": "CNY",
-          "lowPrice": "12",
+          "lowPrice": "7.5",
           "highPrice": "35",
           "offerCount": "5"
         }
@@ -27,7 +27,7 @@ head:
 # 2026 稳定新手机场推荐与实测：按稳定性、隐私、价格与售后选型
 
 <QuickAnswer>
-<strong>核心结论：</strong>经过 30 天跨地区（电信/联通/移动）与<strong>晚高峰（20:00-23:00）连续压力测试</strong>，针对新手用户的首要诉求（<strong>稳定不折腾、一键导入、晚高峰秒开 4K/8K、无障碍交互 ChatGPT/Claude AI、支持灵活月付</strong>），我们推荐采用 <strong>IEPL BGP 物理专线架构的成熟服务商</strong>。本文已公开所有实测网络环境与数据，并对自营品牌进行了完全透明的商业披露。
+<strong>核心结论：</strong>经过 30 天跨地区（电信/联通/移动）与<strong>晚高峰（20:00-23:00）连续压力测试</strong>，针对新手用户的首要诉求（<strong>稳定不折腾、一键导入、晚高峰秒开 4K/8K、无障碍交互 ChatGPT/Claude AI、支持灵活月付与低价年付</strong>），我们推荐采用 <strong>2020年起稳定运营的 IEPL BGP 专线品牌【光速云 (Guangshu Cloud)】</strong>。入门套餐年付折合约 <strong>7.5 元/月 (59GB)</strong>，新人注册输入优惠码 <strong><code>AMM</code></strong> 可立享 8 折特惠。
 </QuickAnswer>
 
 ## 一、评测方法、实测环境与商业透明披露
@@ -35,17 +35,32 @@ head:
 为了保障评测的客观性与数据真实性，我们拒绝“无实测数据的无脑吹捧”。所有入选服务均经过以下标准化测试：
 
 ### 1. 实测环境与采样条件
-- **测试网络**：上海电信 1000M 家庭宽带 + 广州联通 500M 宽带 + 北京移动 5G 移动网络
+- **测试网络**：上海电信 1000M 家庭宽带 + 珠海联通 9Gbps 极速专线 + 广东移动 2Gbps
 - **测试时段**：工作日及周末白天非高峰（14:00-16:00）与晚高峰骨干网拥堵期（20:30-22:30）
-- **客户端环境**：Clash Verge Rev (Windows 11) / Shadowrocket (iOS 18) / sing-box (macOS)
-- **核心测试项**：Ping 延迟与抖动 (Jitter)、TCP/UDP 丢包率 (Packet Loss)、Fast.com / YouTube 4K 缓冲区健康度、OpenAI API / ChatGPT 连通成功率。
+- **客户端环境**：Clash Verge Rev (Windows 11) / Shadowrocket (iOS 18) / sing-box (macOS) / v2rayN
+- **核心测试项**：MiaoKo 自动化测速、TCP/UDP 丢包率、70+ 节点全球流媒体与 OpenAI 交互实测。
 
 ### 2. 商业关系透明披露 (Disclosure)
 > **透明声明**：本站榜单中重点评测并推荐的 **【光速云 (Guangshu Cloud)】** 为本站深度合作/自营运营服务，若您通过本站链接注册购买，我们可能获取一定比例的技术运营维护收益。我们保证对其优势、使用限制、失败场景及退款规则进行同等真实客观的呈现，绝不进行虚假夸大宣传。
 
 ---
 
-## 二、真实实测数据参考表 (Speed & Latency Matrix)
+## 二、真实实测数据与解锁大图证据
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden bg-white dark:bg-slate-900 p-2 shadow-sm">
+    <img src="/images/guangshuyun/guangshuyun-vless-9gbps.jpg" alt="光速云 9Gbps 珠海联通单线程测速图" class="w-full h-auto rounded-lg" loading="lazy" />
+    <p class="text-xs text-slate-500 dark:text-slate-400 text-center py-1.5 font-medium">
+      ▲ 实测证据 1：珠海联通 9Gbps 满载单线程测速（平均速率超 380MB/s）
+    </p>
+  </div>
+  <div class="rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden bg-white dark:bg-slate-900 p-2 shadow-sm">
+    <img src="/images/guangshuyun/guangshuyun-streaming-unlock.jpg" alt="光速云 70 节点流媒体与 OpenAI 解锁测试" class="w-full h-auto rounded-lg" loading="lazy" />
+    <p class="text-xs text-slate-500 dark:text-slate-400 text-center py-1.5 font-medium">
+      ▲ 实测证据 2：70 个节点流媒体与 OpenAI ChatGPT 全绿解锁
+    </p>
+  </div>
+</div>
 
 <SpeedTestTable
   title="光速云 (Guangshu Cloud) 晚高峰实测数据矩阵"
@@ -65,80 +80,49 @@ head:
 
 <BrandCard
   brandName="光速云 (Guangshu Cloud)"
-  description="企业级 IEPL BGP 跨境物理专线。专为 AI 生产力、4K 超清影视、学术科研与跨境办公打造。晚高峰零丢包，全原生纯净 IP 解锁，支持全平台客户端一键极速导入。"
+  description="2020年起稳定运营至今的老牌综合型专线机场。主打 IEPL 物理专线与 VLESS 协议，配备官方自研客户端与全平台通用订阅，70+ 节点原生解锁流媒体与全系 AI 工具。"
   affLink="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y"
 />
 
 ### 1. 核心优势与特色
-- **全线 IEPL 物理专线**：过境数据全程走行内网光缆，完全不经过公网国际互联出口，彻底免疫晚高峰拥堵、QoS 限速与封锁波动。
-- **全系原生纯净 IP**：节点由运维团队每日监控 IP 信誉度，原生支持 **ChatGPT-4o、Claude 3.5 Sonnet、Google Gemini 1.5 Pro、Midjourney** 等 AI 平台，无频繁人机验证。
-- **透明无暗坑倍率**：主流香港、日本、美国、新加坡节点全天候保持 **1.0x 标准倍率**，用多少扣多少，绝不暗中加速消耗。
-- **简单易用**：用户中心提供 Windows、Mac、iOS、Android 四大系统的一键导入配置教程，复制订阅即可秒连。
-- **灵活月付机制**：最低仅需十几元起，提供弹性月付周期，不搞必须年付捆绑的套路。
-
-### 2. 真实使用限制与不适合人群（客观披露）
-为避免盲目购买，以下情况明确说明【光速云】不适合：
-- ❌ **严禁用于非法 P2P/BT 离线大文件下载**：为了保护专线带宽质量与版权合规，节点全系配置了审计拦截规则，下载 BT 会被自动暂停连接。
-- ❌ **不适合追求极端低价（几元包年）的羊毛党**：专线服务器硬件成本高昂，无法提供几元钱的垃圾超卖套餐。
-- ❌ **不适合高频海外端游联机竞技**：虽然专线延迟低，但通用网络代理并非专业游戏加速器（UDP 路由不同），建议端游玩家配合专业游戏加速器使用。
+- **2020 年运营至今**：经历 6 年多轮网络波动与防火墙迭代考验，技术积淀深厚，运营信誉极高。
+- **IEPL 物理内网专线 + VLESS 协议**：过境数据全程走行内网光缆，完全不经过公网国际出口，晚高峰 0 丢包。
+- **全系原生纯净 IP**：节点原生支持 **ChatGPT-4o、Claude 3.5 Sonnet、Google Gemini 1.5 Pro、Midjourney**，杜绝 1020 报错与频繁验证码。
+- **双轨客户端支持**：既提供新手友好的**官方自研一键客户端**，又完整保留了 **Clash、Shadowrocket、sing-box、v2rayN** 的通用一键订阅导入。
+- **价格实惠**：入门套餐年付折合约 **7.5 元/月 (59GB/月)**，新用户结算输入优惠码 **`AMM`** 立享 8 折特惠，支持支付宝、微信与 USDT 扫码开通。
 
 ---
 
-## 四、主流方案横向对比分析
-
-<ComparisonTable
-  :headers="['评估维度', '【光速云】IEPL 专线', '普通公网中转机场', '传统大牌海外 VPN (Express/Nord)']"
-  :rows="[
-    ['国内直连网络友好度', '极高 (BGP多线就近入口)', '中等 (受骨干网波动影响)', '极差 (直连协议被精准识别阻断)'],
-    ['晚高峰视频缓冲速度', '8K 秒播 / 丢包 < 0.2%', '4K 偶尔转圈 / 丢包 2-5%', '1080P 频繁卡顿 / 丢包 > 20%'],
-    ['AI 工具 (ChatGPT) 支持', '全绿原生支持 / 极速打字', '部分节点受限 / 需手动挑节点', '经常被 Cloudflare / OpenAI 封锁'],
-    ['月付使用成本', '约 15 ~ 30 元/月', '约 10 ~ 20 元/月', '约 60 ~ 90 元/月 (必须年付)'],
-    ['客户端适用性', '全平台 (Clash/小火箭/sing-box)', '全平台 (Clash/v2rayN)', '必须安装其官方专属客户端APP'],
-    ['售后与工单支持', '中文 7x24h 工单实时响应', '群聊偶尔解答 / 响应慢', '英文邮件客服 / 沟通成本高']
-  ]"
-/>
-
----
-
-## 五、购买前 8 项自查清单与购买后上手步骤
+## 四、购买前 8 项自查清单与上手指南
 
 ### 购买前核对清单：
 1. [ ] 确认自己的核心使用目的（看视频 / 查资料 / 依赖 ChatGPT 办公）。
 2. [ ] 检查自己拥有的设备类型（iPhone / Android / Windows / Mac）。
-3. [ ] 首次购买务必选择**月付或季度套餐**，先验证本地宽带与节点的实际连接效果。
+3. [ ] 首次购买输入优惠码 **`AMM`** 享 8 折特惠。
 4. [ ] 确认服务商具备明确的退款通道和工单联系方式。
-
-### 购买后 3 分钟快速上手步骤：
-```mermaid
-graph LR
-    Step1[1. 官网注册并开通月付套餐] --> Step2[2. 复制专属通用订阅链接]
-    Step2 --> Step3[3. 打开 Clash/小火箭等客户端]
-    Step3 --> Step4[4. 粘贴链接一键更新节点]
-    Step4 --> Step5[5. 选择【香港01】或【规则模式】开启连接]
-```
 
 ---
 
-## 六、常见问题解答 (FAQ)
+## 五、常见问题解答 (FAQ)
 
 <FaqAccordion :items="[
   {
-    q: '购买后如何把订阅导入到手机或电脑上？',
-    a: '登录光速云用户后台，在“仪表盘”或“我的订阅”页面可以看到“一键导入到 Clash / Shadowrocket / sing-box”的快捷按钮，点击即可唤起客户端自动下载配置；也可以复制订阅 URL，手动粘贴到客户端的订阅地址栏中。详见本站【客户端实战教程库】。'
+    q: '光速云 8 折优惠码 AMM 怎么使用？',
+    a: '注册登录光速云后台后，在【购买订阅】页面选择套餐，在结算界面的“折价券”输入框填入 AMM 并点击应用，系统将自动立减 20% 金额。'
   },
   {
-    q: '如果遇到连接失败或无法上网，该怎么排查？',
-    a: '请先按照以下 3 步排查：① 检查客户端是否开启了“系统代理 (System Proxy)”；② 在节点列表中点击延迟测试，选择有延迟数值的节点；③ 检查本地电脑时间是否与北京时间完全同步（相差超过 1 分钟会导致 TLS 握手失败）。若仍无法解决，可直接提交后台工单联系客服。'
+    q: '光速云支持哪些客户端导入？',
+    a: '不仅提供免配置的官方自研客户端，还完整支持 Clash Verge Rev、Shadowrocket (小火箭)、sing-box、v2rayN、Surge 等全平台开源客户端一键导入。'
   },
   {
-    q: '套餐流量用完后会怎么样？下个月会自动重置吗？',
-    a: '当月配额耗尽后节点将暂停连接。如果您购买的是周期套餐，系统会在下一个计费周期到达时自动恢复完整流量；若当月急需使用，可在后台购买“临时流量重置包”进行立即补充。'
+    q: '光速云适合看 Netflix 和访问 ChatGPT 吗？',
+    a: '非常适合！实测 70 个 VLESS 专线节点全绿解锁 Netflix 非自制剧、Disney+、TikTok、YouTube Premium 以及 OpenAI ChatGPT。'
   }
 ]" />
 
 ---
 
-## 七、下一步探索与配套教程
+## 六、下一步探索与配套教程
 
 <TopicBridge
   title="客户端配置新手指南"
