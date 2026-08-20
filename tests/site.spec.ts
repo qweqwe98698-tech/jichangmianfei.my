@@ -75,17 +75,29 @@ test.describe('机场免费 jichangmianfei.my E2E 测试套件', () => {
     const heading = page.locator('h1')
     await expect(heading).toContainText('光速云')
 
-    // 验证实测数据表格
+    // 验证实测数据
     const speedTable = page.locator('text=实测数据')
     await expect(speedTable.first()).toBeVisible()
   })
 
-  test('移动端视口 (Mobile Viewport) 响应式验证', async ({ page }) => {
+  test('移动端视口 (Mobile Viewport) 痛点胶囊与卡片化表格响应式验证', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 })
     await page.goto('/')
     
     // 移动端菜单按钮可见
     const mobileMenuBtn = page.locator('.VPNavBarHamburger')
     await expect(mobileMenuBtn).toBeVisible()
+
+    // 验证手机端痛点胶囊
+    const quickCapsules = page.locator('text=手机端高频痛点一键直达')
+    await expect(quickCapsules).toBeVisible()
+
+    // 进入文章页测试移动端卡片化与滚动悬浮栏
+    await page.goto('/free-airport/recommendations')
+    await page.evaluate(() => window.scrollTo(0, 500))
+    await page.waitForTimeout(300)
+
+    const stickyBar = page.locator('text=光速云专线实测 / 直达')
+    await expect(stickyBar).toBeVisible()
   })
 })

@@ -38,30 +38,33 @@
   box-shadow: 0 8px 24px -4px rgba(12, 135, 235, 0.08);
 }
 
-/* 表格优化 */
-.vp-doc table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-  display: table;
-}
-
-.vp-doc th, .vp-doc td {
-  border: 1px solid var(--vp-c-divider);
-  padding: 10px 14px;
-  text-align: left;
-}
-
-.vp-doc th {
-  background-color: var(--vp-c-bg-soft);
-  font-weight: 600;
-}
-
-/* 移动端排版优化 */
+/* 移动端排版与安全区域优化 */
 @media (max-width: 768px) {
-  .vp-doc table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+  /* 文章正文小屏字号与行高微调 */
+  .vp-doc {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.25rem !important;
+    margin-top: 1.75rem !important;
+    margin-bottom: 0.5rem !important;
+    padding-bottom: 0.25rem !important;
+  }
+
+  .vp-doc h3 {
+    font-size: 1.05rem !important;
+  }
+
+  /* 底部预留悬浮栏空间，防止最后一行内容被遮挡 */
+  .VPDoc:not(.has-sidebar) .content-container {
+    padding-bottom: 4rem;
   }
 }

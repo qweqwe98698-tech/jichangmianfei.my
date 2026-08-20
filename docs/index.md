@@ -43,7 +43,29 @@ features:
     link: /free-node/ai-nodes
 ---
 
-<div class="max-w-5xl mx-auto px-4 py-8">
+<div class="max-w-5xl mx-auto px-4 py-4 sm:py-8">
+
+<!-- 📱 手机端高频快捷痛点直达胶囊 (Mobile Quick Action Pills) -->
+<div class="block sm:hidden my-3 p-3.5 rounded-xl border border-blue-200/80 dark:border-blue-900/60 bg-blue-50/60 dark:bg-blue-950/30">
+  <div class="text-[11px] font-bold text-blue-900 dark:text-blue-200 mb-2 flex items-center gap-1.5">
+    <span class="inline-block w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+    <span>手机端高频痛点一键直达：</span>
+  </div>
+  <div class="grid grid-cols-2 gap-2 text-xs">
+    <a href="/troubleshooting/node-all-timeout" class="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 flex items-center gap-1.5 font-medium text-slate-800 dark:text-slate-200 no-underline shadow-xs">
+      <span class="text-rose-500">🚨</span> 节点全部超时
+    </a>
+    <a href="/tutorial/shadowrocket-ios" class="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 flex items-center gap-1.5 font-medium text-slate-800 dark:text-slate-200 no-underline shadow-xs">
+      <span>🍎</span> 小火箭教程
+    </a>
+    <a href="/tutorial/clash-verge-rev" class="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 flex items-center gap-1.5 font-medium text-slate-800 dark:text-slate-200 no-underline shadow-xs">
+      <span>💻</span> Clash 教程
+    </a>
+    <a href="/free-airport/recommendations" class="p-2 rounded-lg bg-white dark:bg-slate-900 border border-blue-200 dark:border-blue-800/80 flex items-center gap-1.5 font-semibold text-blue-600 dark:text-blue-400 no-underline shadow-xs">
+      <span>⚡</span> 稳定专线推荐
+    </a>
+  </div>
+</div>
 
 ## 为什么建立本站？全站核心原则
 
@@ -61,11 +83,11 @@ features:
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
 
-<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
-  <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+<div class="p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
+  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
     <span>🔍 我是新手，正在寻找稳定好用的方案</span>
   </h3>
-  <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">
+  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-3">
     不知道机场和 VPN 的区别？想找一款适合日常查资料、看视频或使用 AI 工具的稳定机场？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
@@ -75,11 +97,11 @@ features:
   </div>
 </div>
 
-<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
-  <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+<div class="p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
+  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
     <span>⚠️ 我的网络遇到了连接问题与故障</span>
   </h3>
-  <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">
+  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-3">
     节点全部超时全红？显示已连接却打不开网页？ChatGPT 提示地区不可用？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
@@ -89,11 +111,11 @@ features:
   </div>
 </div>
 
-<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
-  <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+<div class="p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
+  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
     <span>💻 我需要配置客户端与导入订阅</span>
   </h3>
-  <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">
+  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-3">
     不知道如何在 Windows、Mac、iPhone 或安卓手机上安装软件并导入节点订阅？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
@@ -103,11 +125,11 @@ features:
   </div>
 </div>
 
-<div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
-  <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
+<div class="p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:border-blue-500 transition-colors">
+  <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2">
     <span>🛡️ 我关心网络隐私与免费资源安全</span>
   </h3>
-  <p class="text-sm text-slate-600 dark:text-slate-400 mb-3">
+  <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-3">
     免费节点会不会记录密码？服务商能看到我的浏览记录吗？如何防范跑路风险？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
