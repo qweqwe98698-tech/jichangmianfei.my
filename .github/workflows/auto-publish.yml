@@ -1,0 +1,47 @@
+name: Auto Publish SEO/GEO Matrix Articles
+
+on:
+  schedule:
+    # 每 4 天 UTC 时间 02:00（北京时间 10:00）自动执行一次
+    - cron: '0 2 */4 * *'
+  workflow_dispatch: # 支持在 GitHub Actions 页面随时手动一键触发
+
+permissions:
+  contents: write
+
+jobs:
+  publish-article:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Execute Auto Publish & URL Anti-AI Optimization Pipeline
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node scripts/auto-publish.mjs
+
+      - name: Commit and Push New Article to Main
+        run: |
+          git config --global user.name "JiChangMianFei Bot"
+          git config --global user.email "bot@jichangmianfei.my"
+          git add docs/ scripts/seo-system/
+          if git diff --staged --quiet; then
+            echo "没有新的改动需要提交。"
+          else
+            # 注意：此处严格遵循要求，不包含 [skip ci]，确保 Cloudflare Pages / CI 能自动捕获提交并触发线上发布部署
+            git commit -m "feat(content): publish new SEO/GEO matrix article"
+            git push origin main
+          fi

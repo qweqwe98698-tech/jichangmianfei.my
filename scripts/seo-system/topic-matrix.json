@@ -1,0 +1,166 @@
+[
+  {
+    "id": "matrix-001",
+    "cluster": "knowledge",
+    "category": "knowledge",
+    "slug": "iplc-iepl-transit-benchmark",
+    "title": "IPLC 与 IEPL 国际专线深度架构横评：底层传输机制、物理机房与晚高峰测速对比 (2026 全景)",
+    "targetKeywords": [
+      "IPLC专线",
+      "IEPL专线",
+      "专线机场",
+      "公网中转",
+      "晚高峰测速",
+      "端内延迟",
+      "专线区别"
+    ],
+    "searchIntent": "深入理解 IPLC 与 IEPL 专线的物理架构差异、抗封锁原理与晚高峰稳定性选型",
+    "status": "published",
+    "publishedUrl": "/knowledge/iplc-iepl-transit-benchmark",
+    "publishedAt": "2026-10-02T11:24:25.100Z"
+  },
+  {
+    "id": "matrix-002",
+    "cluster": "tutorial",
+    "category": "tutorial",
+    "slug": "sing-box-full-configuration-guide",
+    "title": "sing-box 客户端全平台终极配置实战：现代化分流规则、TUN 全局接管与性能调优指南",
+    "targetKeywords": [
+      "sing-box配置教程",
+      "sing-box规则集",
+      "sing-box TUN模式",
+      "Hysteria2配置",
+      "sing-box新手指南"
+    ],
+    "searchIntent": "掌握新一代代理内核 sing-box 的全平台配置、规则编写与极致网络吞吐调优",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-003",
+    "cluster": "troubleshooting",
+    "category": "troubleshooting",
+    "slug": "dns-leak-webrtc-ip-repair",
+    "title": "DNS 泄漏与 WebRTC 真实 IP 暴露全景诊断：深度检测工具、防关联设置与修复方案",
+    "targetKeywords": [
+      "DNS泄漏检测",
+      "WebRTC真实IP暴露",
+      "防关联配置",
+      "DoH配置",
+      "代理隐私安全"
+    ],
+    "searchIntent": "全面排查并修复代理环境下的真实 IP 泄漏、DNS 污染与跨境账号关联风险",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-004",
+    "cluster": "free-airport",
+    "category": "free-airport",
+    "slug": "airport-performance-benchmark-framework",
+    "title": "2026 机场选型与性能评测终极指南：晚高峰压测标准、测速图陷阱与高性价比决策模型",
+    "targetKeywords": [
+      "机场选型指南",
+      "机场评测标准",
+      "晚高峰压测",
+      "测速图造假",
+      "高性价比机场"
+    ],
+    "searchIntent": "建立科学客观的机场选型与实测指标，避免营销套路与虚假宣传",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-005",
+    "cluster": "knowledge",
+    "category": "knowledge",
+    "slug": "vless-reality-vision-mechanisms",
+    "title": "VLESS-Reality 与 Vision 流控底层机制深度剖析：消除 TLS 握手特征与防封锁全景指南",
+    "targetKeywords": [
+      "VLESS Reality原理",
+      "Vision流控",
+      "消除TLS特征",
+      "Xray协议详解",
+      "抗封锁代理"
+    ],
+    "searchIntent": "从密码学与网络协议层面深入理解 Reality 与 Vision 的无证书偷窥与流量混淆机制",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-006",
+    "cluster": "free-node",
+    "category": "free-node",
+    "slug": "public-free-nodes-security-audit",
+    "title": "开源免费节点与公共订阅安全审计：中间人监听风险、蜜罐鉴别与安全隔离实战",
+    "targetKeywords": [
+      "免费节点安全吗",
+      "公共订阅风险",
+      "中间人劫持",
+      "节点蜜罐鉴别",
+      "免费节点使用规范"
+    ],
+    "searchIntent": "分析公开免费节点的安全边界与技术陷阱，提供零信任隔离访问方案",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-007",
+    "cluster": "tutorial",
+    "category": "tutorial",
+    "slug": "openwrt-router-full-home-proxy",
+    "title": "软路由 OpenWrt 全屋千兆无感科学上网实战：PassWall / OpenClash 旁路由精准分流",
+    "targetKeywords": [
+      "OpenWrt科学上网",
+      "旁路由设置",
+      "OpenClash分流",
+      "PassWall教程",
+      "全屋代理方案"
+    ],
+    "searchIntent": "搭建家庭级透明代理网关，实现 Apple TV、主机游戏、智能家居的按需自动分流",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-008",
+    "cluster": "troubleshooting",
+    "category": "troubleshooting",
+    "slug": "tun-mode-adapter-conflict-repair",
+    "title": "TUN 虚拟网卡驱动冲突与代理关闭后电脑断网故障彻底解决指南 (Windows / macOS)",
+    "targetKeywords": [
+      "TUN模式断网",
+      "代理关闭后无法上网",
+      "虚拟网卡冲突",
+      "Wintun驱动修复",
+      "系统代理卡死"
+    ],
+    "searchIntent": "快速定位并一键恢复因 TUN 模式或代理未正常退出导致的系统全局网络阻断故障",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-009",
+    "cluster": "knowledge",
+    "category": "knowledge",
+    "slug": "hysteria-tuic-udp-qos-optimization",
+    "title": "Hysteria 2 与 TUIC 协议弱网抗丢包深度解析：基于 QUIC 的单边加速与运营商 QoS 应对",
+    "targetKeywords": [
+      "Hysteria2原理",
+      "TUIC协议",
+      "QUIC代理",
+      "UDP QoS限制",
+      "弱网丢包加速"
+    ],
+    "searchIntent": "深入解析 QUIC/UDP 协议在恶劣网络环境下的抗拥塞算法与晚高峰限速突破",
+    "status": "pending"
+  },
+  {
+    "id": "matrix-010",
+    "cluster": "knowledge",
+    "category": "knowledge",
+    "slug": "overseas-clean-ip-matrix-guide",
+    "title": "2026 跨境业务与 AI 工作流原生干净 IP 选型：机房原生、双 ISP 住宅与防关联全景",
+    "targetKeywords": [
+      "原生干净IP",
+      "双ISP住宅IP",
+      "ChatGPT封号防范",
+      "跨境电商网络",
+      "IP欺诈分查询"
+    ],
+    "searchIntent": "掌握纯净商用住宅 IP 与机房 IP 的质量判定标准，彻底解决 AI 拒识与跨境风控封号",
+    "status": "pending"
+  }
+]

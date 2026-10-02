@@ -10,6 +10,8 @@
     "preview": "vitepress preview docs",
     "seo:check": "node scripts/seo-check.mjs",
     "indexnow": "node scripts/indexnow-ping.mjs",
+    "publish:article": "node scripts/auto-publish.mjs",
+    "scan:urls": "node scripts/seo-system/scan-existing.mjs",
     "test:e2e": "playwright test"
   },
   "keywords": [
