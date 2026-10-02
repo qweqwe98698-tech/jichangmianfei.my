@@ -247,6 +247,7 @@ export default defineConfig({
         {
           text: '客户端实战教程库',
           items: [
+            { text: 'sing-box 客户端全平台终极配置实战：现代', link: '/tutorial/sing-box-full-configuration' },
             { text: '全平台代理客户端安装总览 (Pillar)', link: '/tutorial/' },
             { text: 'Clash Verge Rev 电脑端从零配置', link: '/tutorial/clash-verge-rev' },
             { text: 'Clash 进阶分流规则集 (ACL4SSR)', link: '/tutorial/clash-verge-rulesets' },

@@ -260,6 +260,19 @@
     "protected": true
   },
   {
+    "url": "/knowledge/iplc-iepl-transit-benchmark",
+    "slug": "iplc-iepl-transit-benchmark",
+    "file": "knowledge/iplc-iepl-transit-benchmark.md",
+    "pageType": "knowledge",
+    "canonical": "https://jichangmianfei.my/knowledge/iplc-iepl-transit-benchmark",
+    "title": "IPLC 与 IEPL 国际专线深度架构横评：底层传输机制、物理机房与晚高峰测速对比 (2026 全景)",
+    "description": "2026 年深度解析 IPLC 与 IEPL 国际专线的底层传输机制、物理机房架构、BGP 路由策略与晚高峰测速表现。涵盖专线机场选型、公网中转对比、端内延迟优化、抗封锁原理及全场景决策指南，附 10 个高频 FAQ 与故障排查手册。",
+    "category": "knowledge",
+    "cluster": "knowledge",
+    "status": "published",
+    "protected": true
+  },
+  {
     "url": "/knowledge/multiplier-and-billing",
     "slug": "multiplier-and-billing",
     "file": "knowledge/multiplier-and-billing.md",
@@ -650,17 +663,17 @@
     "protected": true
   },
   {
-    "url": "/knowledge/iplc-iepl-transit-benchmark",
-    "slug": "iplc-iepl-transit-benchmark",
-    "file": "knowledge/iplc-iepl-transit-benchmark.md",
-    "pageType": "knowledge",
-    "canonical": "https://jichangmianfei.my/knowledge/iplc-iepl-transit-benchmark",
-    "title": "IPLC 与 IEPL 国际专线深度架构横评：底层传输机制、物理机房与晚高峰测速对比 (2026 全景)",
-    "description": "深入理解 IPLC 与 IEPL 专线的物理架构差异、抗封锁原理与晚高峰稳定性选型",
-    "category": "knowledge",
-    "cluster": "knowledge",
+    "url": "/tutorial/sing-box-full-configuration",
+    "slug": "sing-box-full-configuration",
+    "file": "tutorial/sing-box-full-configuration.md",
+    "pageType": "tutorial",
+    "canonical": "https://jichangmianfei.my/tutorial/sing-box-full-configuration",
+    "title": "sing-box 客户端全平台终极配置实战：现代化分流规则、TUN 全局接管与性能调优指南",
+    "description": "掌握新一代代理内核 sing-box 的全平台配置、规则编写与极致网络吞吐调优",
+    "category": "tutorial",
+    "cluster": "tutorial",
     "status": "published",
     "protected": true,
-    "publishedAt": "2026-10-02T11:24:25.099Z"
+    "publishedAt": "2026-10-02T11:28:02.893Z"
   }
 ]
