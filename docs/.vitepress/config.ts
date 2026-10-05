@@ -274,6 +274,7 @@ export default defineConfig({
         {
           text: '网络故障诊断中心',
           items: [
+            { text: 'DNS 泄漏与 WebRTC 真实 IP 暴露全', link: '/troubleshooting/dns-leak-webrtc-ip' },
             { text: '海外网络常见故障排查总览 (Pillar)', link: '/troubleshooting/' },
             { text: 'GitHub 打不开/克隆极慢终极解决', link: '/troubleshooting/github-speedup' },
             { text: 'Docker Hub 镜像拉取超时修复', link: '/troubleshooting/docker-hub-pull-failed' },

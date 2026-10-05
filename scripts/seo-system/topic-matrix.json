@@ -51,7 +51,9 @@
       "代理隐私安全"
     ],
     "searchIntent": "全面排查并修复代理环境下的真实 IP 泄漏、DNS 污染与跨境账号关联风险",
-    "status": "pending"
+    "status": "published",
+    "publishedUrl": "/troubleshooting/dns-leak-webrtc-ip",
+    "publishedAt": "2026-10-05T08:50:27.240Z"
   },
   {
     "id": "matrix-004",
