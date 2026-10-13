@@ -179,6 +179,7 @@ export default defineConfig({
         {
           text: '免费机场专题矩阵',
           items: [
+            { text: '2026 机场选型与性能评测终极指南：晚高峰压测', link: '/free-airport/airport-performance-benchmark-framework' },
             { text: '2026 免费机场综合评测指南 (Pillar)', link: '/free-airport/' },
             { text: '免费 vs 付费机场深度对比', link: '/free-airport/free-vs-paid' },
             { text: '免费机场安全吗？风险与隐私解析', link: '/free-airport/security-risks' },
