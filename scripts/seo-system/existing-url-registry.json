@@ -26,6 +26,19 @@
     "protected": true
   },
   {
+    "url": "/free-airport/airport-performance-benchmark-framework",
+    "slug": "airport-performance-benchmark-framework",
+    "file": "free-airport/airport-performance-benchmark-framework.md",
+    "pageType": "free-airport",
+    "canonical": "https://jichangmianfei.my/free-airport/airport-performance-benchmark-framework",
+    "title": "2026 机场选型与性能评测终极指南：晚高峰压测标准、测速图陷阱与高性价比决策模型",
+    "description": "面向 2026 年的机场选型指南，系统拆解机场评测标准、晚高峰压测方法、测速图造假识别与高性价比机场决策模型，覆盖 IEPL 专线、TLS 伪装、BGP 机房、丢包抖动等底层指标，帮助流媒体、AI 大模型、跨境外贸与联机游戏用户建立可复现的客观评测体系。",
+    "category": "free-airport",
+    "cluster": "free-airport",
+    "status": "published",
+    "protected": true
+  },
+  {
     "url": "/free-airport/free-vs-paid",
     "slug": "free-vs-paid",
     "file": "free-airport/free-vs-paid.md",
@@ -689,17 +702,17 @@
     "protected": true
   },
   {
-    "url": "/free-airport/airport-performance-benchmark-framework",
-    "slug": "airport-performance-benchmark-framework",
-    "file": "free-airport/airport-performance-benchmark-framework.md",
-    "pageType": "free-airport",
-    "canonical": "https://jichangmianfei.my/free-airport/airport-performance-benchmark-framework",
-    "title": "2026 机场选型与性能评测终极指南：晚高峰压测标准、测速图陷阱与高性价比决策模型",
-    "description": "建立科学客观的机场选型与实测指标，避免营销套路与虚假宣传",
-    "category": "free-airport",
-    "cluster": "free-airport",
+    "url": "/knowledge/vless-reality-vision-mechanisms",
+    "slug": "vless-reality-vision-mechanisms",
+    "file": "knowledge/vless-reality-vision-mechanisms.md",
+    "pageType": "knowledge",
+    "canonical": "https://jichangmianfei.my/knowledge/vless-reality-vision-mechanisms",
+    "title": "VLESS-Reality 与 Vision 流控底层机制深度剖析：消除 TLS 握手特征与防封锁全景指南",
+    "description": "从密码学与网络协议层面深入理解 Reality 与 Vision 的无证书偷窥与流量混淆机制",
+    "category": "knowledge",
+    "cluster": "knowledge",
     "status": "published",
     "protected": true,
-    "publishedAt": "2026-10-13T09:16:43.166Z"
+    "publishedAt": "2026-10-17T06:50:57.304Z"
   }
 ]
