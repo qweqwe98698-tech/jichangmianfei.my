@@ -105,7 +105,9 @@
       "免费节点使用规范"
     ],
     "searchIntent": "分析公开免费节点的安全边界与技术陷阱，提供零信任隔离访问方案",
-    "status": "pending"
+    "status": "published",
+    "publishedUrl": "/free-node/public-free-nodes-security",
+    "publishedAt": "2026-10-21T07:26:29.531Z"
   },
   {
     "id": "matrix-007",

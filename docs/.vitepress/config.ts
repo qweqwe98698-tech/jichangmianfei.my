@@ -228,6 +228,7 @@ export default defineConfig({
         {
           text: '免费节点与订阅中心',
           items: [
+            { text: '开源免费节点与公共订阅安全审计：中间人监听风险、', link: '/free-node/public-free-nodes-security' },
             { text: '免费节点与订阅源获取使用指南 (Pillar)', link: '/free-node/' },
             { text: 'Clash 免费节点获取与配置教程', link: '/free-node/clash' },
             { text: 'v2rayN 免费节点配置与测速指南', link: '/free-node/v2rayn' },
