@@ -123,7 +123,9 @@
       "全屋代理方案"
     ],
     "searchIntent": "搭建家庭级透明代理网关，实现 Apple TV、主机游戏、智能家居的按需自动分流",
-    "status": "pending"
+    "status": "published",
+    "publishedUrl": "/tutorial/openwrt-router-full-home",
+    "publishedAt": "2026-10-25T07:31:47.389Z"
   },
   {
     "id": "matrix-008",

@@ -156,6 +156,19 @@
     "protected": true
   },
   {
+    "url": "/free-node/public-free-nodes-security",
+    "slug": "public-free-nodes-security",
+    "file": "free-node/public-free-nodes-security.md",
+    "pageType": "free-node",
+    "canonical": "https://jichangmianfei.my/free-node/public-free-nodes-security",
+    "title": "开源免费节点与公共订阅安全审计：中间人监听风险、蜜罐鉴别与安全隔离实战",
+    "description": "深度审计开源免费节点与公共订阅的信任模型，剖析中间人劫持、TLS 剥离、DNS 泄漏与蜜罐节点鉴别方法，提供零信任隔离访问、客户端加固与全场景选型决策的工程化实战指南。",
+    "category": "free-node",
+    "cluster": "free-node",
+    "status": "published",
+    "protected": true
+  },
+  {
     "url": "/free-node/regions",
     "slug": "regions",
     "file": "free-node/regions.md",
@@ -715,17 +728,17 @@
     "protected": true
   },
   {
-    "url": "/free-node/public-free-nodes-security",
-    "slug": "public-free-nodes-security",
-    "file": "free-node/public-free-nodes-security.md",
-    "pageType": "free-node",
-    "canonical": "https://jichangmianfei.my/free-node/public-free-nodes-security",
-    "title": "开源免费节点与公共订阅安全审计：中间人监听风险、蜜罐鉴别与安全隔离实战",
-    "description": "分析公开免费节点的安全边界与技术陷阱，提供零信任隔离访问方案",
-    "category": "free-node",
-    "cluster": "free-node",
+    "url": "/tutorial/openwrt-router-full-home",
+    "slug": "openwrt-router-full-home",
+    "file": "tutorial/openwrt-router-full-home.md",
+    "pageType": "tutorial",
+    "canonical": "https://jichangmianfei.my/tutorial/openwrt-router-full-home",
+    "title": "软路由 OpenWrt 全屋千兆无感科学上网实战：PassWall / OpenClash 旁路由精准分流",
+    "description": "搭建家庭级透明代理网关，实现 Apple TV、主机游戏、智能家居的按需自动分流",
+    "category": "tutorial",
+    "cluster": "tutorial",
     "status": "published",
     "protected": true,
-    "publishedAt": "2026-10-21T07:26:29.531Z"
+    "publishedAt": "2026-10-25T07:31:47.389Z"
   }
 ]

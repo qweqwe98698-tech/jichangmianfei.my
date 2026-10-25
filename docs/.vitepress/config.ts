@@ -250,6 +250,7 @@ export default defineConfig({
         {
           text: '客户端实战教程库',
           items: [
+            { text: '软路由 OpenWrt 全屋千兆无感科学上网实战', link: '/tutorial/openwrt-router-full-home' },
             { text: 'sing-box 客户端全平台终极配置实战：现代', link: '/tutorial/sing-box-full-configuration' },
             { text: '全平台代理客户端安装总览 (Pillar)', link: '/tutorial/' },
             { text: 'Clash Verge Rev 电脑端从零配置', link: '/tutorial/clash-verge-rev' },
