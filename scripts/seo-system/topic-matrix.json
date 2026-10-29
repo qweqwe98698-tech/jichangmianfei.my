@@ -141,7 +141,9 @@
       "系统代理卡死"
     ],
     "searchIntent": "快速定位并一键恢复因 TUN 模式或代理未正常退出导致的系统全局网络阻断故障",
-    "status": "pending"
+    "status": "published",
+    "publishedUrl": "/troubleshooting/tun-mode-adapter-conflict",
+    "publishedAt": "2026-10-29T08:20:53.125Z"
   },
   {
     "id": "matrix-009",

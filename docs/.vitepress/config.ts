@@ -278,6 +278,7 @@ export default defineConfig({
         {
           text: '网络故障诊断中心',
           items: [
+            { text: 'TUN 虚拟网卡驱动冲突与代理关闭后电脑断网故障', link: '/troubleshooting/tun-mode-adapter-conflict' },
             { text: 'DNS 泄漏与 WebRTC 真实 IP 暴露全', link: '/troubleshooting/dns-leak-webrtc-ip' },
             { text: '海外网络常见故障排查总览 (Pillar)', link: '/troubleshooting/' },
             { text: 'GitHub 打不开/克隆极慢终极解决', link: '/troubleshooting/github-speedup' },
