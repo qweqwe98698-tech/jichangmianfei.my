@@ -201,6 +201,7 @@ export default defineConfig({
         {
           text: '网络知识百科与选型决策',
           items: [
+            { text: 'Hysteria 2 与 TUIC 协议弱网抗丢', link: '/knowledge/hysteria-tuic-udp-qos' },
             { text: 'VLESS-Reality 与 Vision 流', link: '/knowledge/vless-reality-vision-mechanisms' },
             { text: 'IPLC 与 IEPL 国际专线深度架构横评：底', link: '/knowledge/iplc-iepl-transit-benchmark' },
             { text: '知识百科与选型决策总览 (Pillar)', link: '/knowledge/' },

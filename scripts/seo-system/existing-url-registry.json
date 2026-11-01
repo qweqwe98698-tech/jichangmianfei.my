@@ -559,6 +559,19 @@
     "protected": true
   },
   {
+    "url": "/troubleshooting/tun-mode-adapter-conflict",
+    "slug": "tun-mode-adapter-conflict",
+    "file": "troubleshooting/tun-mode-adapter-conflict.md",
+    "pageType": "troubleshooting",
+    "canonical": "https://jichangmianfei.my/troubleshooting/tun-mode-adapter-conflict",
+    "title": "TUN 虚拟网卡驱动冲突与代理关闭后电脑断网故障彻底解决指南 (Windows / macOS)",
+    "description": "深度解析 TUN 模式断网、代理关闭后无法上网、虚拟网卡冲突与 Wintun 驱动修复原理，提供 Windows/macOS 全场景系统代理卡死排查流程、一键恢复命令与底层协议拓扑分析，附 10 个高频 FAQ 与决策矩阵。",
+    "category": "troubleshooting",
+    "cluster": "troubleshooting",
+    "status": "published",
+    "protected": true
+  },
+  {
     "url": "/tutorial/android-cmfa-v2rayng",
     "slug": "android-cmfa-v2rayng",
     "file": "tutorial/android-cmfa-v2rayng.md",
@@ -741,17 +754,17 @@
     "protected": true
   },
   {
-    "url": "/troubleshooting/tun-mode-adapter-conflict",
-    "slug": "tun-mode-adapter-conflict",
-    "file": "troubleshooting/tun-mode-adapter-conflict.md",
-    "pageType": "troubleshooting",
-    "canonical": "https://jichangmianfei.my/troubleshooting/tun-mode-adapter-conflict",
-    "title": "TUN 虚拟网卡驱动冲突与代理关闭后电脑断网故障彻底解决指南 (Windows / macOS)",
-    "description": "快速定位并一键恢复因 TUN 模式或代理未正常退出导致的系统全局网络阻断故障",
-    "category": "troubleshooting",
-    "cluster": "troubleshooting",
+    "url": "/knowledge/hysteria-tuic-udp-qos",
+    "slug": "hysteria-tuic-udp-qos",
+    "file": "knowledge/hysteria-tuic-udp-qos.md",
+    "pageType": "knowledge",
+    "canonical": "https://jichangmianfei.my/knowledge/hysteria-tuic-udp-qos",
+    "title": "Hysteria 2 与 TUIC 协议弱网抗丢包深度解析：基于 QUIC 的单边加速与运营商 QoS 应对",
+    "description": "深入解析 QUIC/UDP 协议在恶劣网络环境下的抗拥塞算法与晚高峰限速突破",
+    "category": "knowledge",
+    "cluster": "knowledge",
     "status": "published",
     "protected": true,
-    "publishedAt": "2026-10-29T08:20:53.125Z"
+    "publishedAt": "2026-11-01T09:02:40.523Z"
   }
 ]
