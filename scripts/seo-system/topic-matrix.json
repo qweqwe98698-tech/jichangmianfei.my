@@ -177,6 +177,8 @@
       "IP欺诈分查询"
     ],
     "searchIntent": "掌握纯净商用住宅 IP 与机房 IP 的质量判定标准，彻底解决 AI 拒识与跨境风控封号",
-    "status": "pending"
+    "status": "published",
+    "publishedUrl": "/knowledge/overseas-clean-ip-matrix",
+    "publishedAt": "2026-11-05T09:20:57.257Z"
   }
 ]

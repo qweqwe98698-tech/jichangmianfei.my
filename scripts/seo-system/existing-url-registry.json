@@ -260,6 +260,19 @@
     "protected": true
   },
   {
+    "url": "/knowledge/hysteria-tuic-udp-qos",
+    "slug": "hysteria-tuic-udp-qos",
+    "file": "knowledge/hysteria-tuic-udp-qos.md",
+    "pageType": "knowledge",
+    "canonical": "https://jichangmianfei.my/knowledge/hysteria-tuic-udp-qos",
+    "title": "Hysteria 2 与 TUIC 协议弱网抗丢包深度解析：基于 QUIC 的单边加速与运营商 QoS 应对",
+    "description": "从 QUIC 拥塞控制、UDP 单边加速、Brutal 带宽协商到运营商 QoS 识别，深度解析 Hysteria 2 与 TUIC 协议在弱网丢包环境下的抗丢包原理、晚高峰限速突破机制与实测选型矩阵，附全场景决策指南与 10 个高频 FAQ。",
+    "category": "knowledge",
+    "cluster": "knowledge",
+    "status": "published",
+    "protected": true
+  },
+  {
     "url": "/knowledge/iepl-vs-relay-lines",
     "slug": "iepl-vs-relay-lines",
     "file": "knowledge/iepl-vs-relay-lines.md",
@@ -754,17 +767,17 @@
     "protected": true
   },
   {
-    "url": "/knowledge/hysteria-tuic-udp-qos",
-    "slug": "hysteria-tuic-udp-qos",
-    "file": "knowledge/hysteria-tuic-udp-qos.md",
+    "url": "/knowledge/overseas-clean-ip-matrix",
+    "slug": "overseas-clean-ip-matrix",
+    "file": "knowledge/overseas-clean-ip-matrix.md",
     "pageType": "knowledge",
-    "canonical": "https://jichangmianfei.my/knowledge/hysteria-tuic-udp-qos",
-    "title": "Hysteria 2 与 TUIC 协议弱网抗丢包深度解析：基于 QUIC 的单边加速与运营商 QoS 应对",
-    "description": "深入解析 QUIC/UDP 协议在恶劣网络环境下的抗拥塞算法与晚高峰限速突破",
+    "canonical": "https://jichangmianfei.my/knowledge/overseas-clean-ip-matrix",
+    "title": "2026 跨境业务与 AI 工作流原生干净 IP 选型：机房原生、双 ISP 住宅与防关联全景",
+    "description": "掌握纯净商用住宅 IP 与机房 IP 的质量判定标准，彻底解决 AI 拒识与跨境风控封号",
     "category": "knowledge",
     "cluster": "knowledge",
     "status": "published",
     "protected": true,
-    "publishedAt": "2026-11-01T09:02:40.523Z"
+    "publishedAt": "2026-11-05T09:20:57.257Z"
   }
 ]
