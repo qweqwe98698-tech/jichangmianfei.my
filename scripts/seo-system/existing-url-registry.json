@@ -325,6 +325,19 @@
     "protected": true
   },
   {
+    "url": "/knowledge/overseas-clean-ip-matrix",
+    "slug": "overseas-clean-ip-matrix",
+    "file": "knowledge/overseas-clean-ip-matrix.md",
+    "pageType": "knowledge",
+    "canonical": "https://jichangmianfei.my/knowledge/overseas-clean-ip-matrix",
+    "title": "2026 跨境业务与 AI 工作流原生干净 IP 选型：机房原生、双 ISP 住宅与防关联全景",
+    "description": "面向跨境业务与 AI 工作流的原生干净 IP 选型全景指南：系统拆解机房原生 IP、双 ISP 住宅 IP 的底层协议差异、IP 欺诈分判定逻辑与防关联指纹体系，给出 ChatGPT/Claude 封号防范、跨境电商网络架构、IP 欺诈分查询与故障排查的完整决策矩阵。",
+    "category": "knowledge",
+    "cluster": "knowledge",
+    "status": "published",
+    "protected": true
+  },
+  {
     "url": "/knowledge/protocols-explained",
     "slug": "protocols-explained",
     "file": "knowledge/protocols-explained.md",
@@ -765,19 +778,5 @@
     "cluster": "tutorial",
     "status": "published",
     "protected": true
-  },
-  {
-    "url": "/knowledge/overseas-clean-ip-matrix",
-    "slug": "overseas-clean-ip-matrix",
-    "file": "knowledge/overseas-clean-ip-matrix.md",
-    "pageType": "knowledge",
-    "canonical": "https://jichangmianfei.my/knowledge/overseas-clean-ip-matrix",
-    "title": "2026 跨境业务与 AI 工作流原生干净 IP 选型：机房原生、双 ISP 住宅与防关联全景",
-    "description": "掌握纯净商用住宅 IP 与机房 IP 的质量判定标准，彻底解决 AI 拒识与跨境风控封号",
-    "category": "knowledge",
-    "cluster": "knowledge",
-    "status": "published",
-    "protected": true,
-    "publishedAt": "2026-11-05T09:20:57.257Z"
   }
 ]
