@@ -118,7 +118,7 @@ head:
 />
 
 ### 如何使用 8 折优惠码？
-1. 点击前往 [光速云官方网站](https://sahude.gsyvipaff.com/#/?code=keqgvT5Y) 注册账号。
+1. 点击前往 <a href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y" target="_blank" rel="nofollow sponsored noopener">光速云官方网站</a> 注册账号。
 2. 进入后台【购买订阅】页面，选择您心仪的套餐周期（支持月付、季付、年付）。
 3. 在结算订单页面找到 **“折价券 / 优惠码”** 输入框，输入 **`AMM`** 并点击“验证/应用”。
 4. 订单金额将自动在原有折扣基础上**再立减 20%（8 折优惠）**，支持支付宝、微信或 USDT 扫码支付。

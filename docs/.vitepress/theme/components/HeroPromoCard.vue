@@ -111,7 +111,7 @@
           <a
             href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener"
             class="hero-cta-btn"
           >
             <span>直达光速云官网</span>

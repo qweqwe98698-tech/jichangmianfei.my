@@ -1,33 +1,66 @@
 ---
-title: iOS Shadowrocket (小火箭) 免费节点添加、订阅导入与配置使用教程
-description: 苹果 iOS 平台最流行的代理客户端 Shadowrocket（小火箭）完整新手使用指南，包含二维码扫描、剪贴板导入、订阅链接添加、分流规则配置及常见连接问题排查。
+title: 小火箭免费节点获取、添加与配置教程：iOS Shadowrocket 订阅导入与测速指南 (2026 最新)
+description: 2026 最新小火箭免费节点获取与配置教程：详细讲解苹果 iOS Shadowrocket 客户端如何添加免费节点、导入订阅 URL、连通性测速排错以及分流规则设置。
 head:
   - - script
     - type: application/ld+json
     - |
       {
         "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "headline": "iOS Shadowrocket (小火箭) 免费节点添加、订阅导入与配置使用教程",
-        "description": "手把手教您在 iPhone / iPad 上使用 Shadowrocket (小火箭) 配置免费节点与订阅",
-        "author": {
-          "@type": "Organization",
-          "name": "机场免费团队"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "机场免费",
-          "logo": "https://jichangmianfei.my/logo.svg"
-        },
-        "datePublished": "2026-02-12",
-        "dateModified": "2026-08-20"
+        "@graph": [
+          {
+            "@type": "TechArticle",
+            "headline": "小火箭免费节点获取、添加与配置教程：iOS Shadowrocket 订阅导入与测速指南 (2026 最新)",
+            "description": "手把手教您在 iPhone / iPad 上使用 Shadowrocket (小火箭) 配置免费节点与订阅",
+            "author": {
+              "@type": "Organization",
+              "name": "机场免费团队"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "机场免费",
+              "logo": "https://jichangmianfei.my/logo.svg"
+            },
+            "datePublished": "2026-02-12",
+            "dateModified": "2026-11-12"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "小火箭免费节点怎么添加？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "复制小火箭或通用订阅 URL，打开 Shadowrocket 点击右上角【+】号，类型选【Subscribe】，在 URL 栏粘贴链接保存，随后在首页下拉刷新即可拉取全部节点。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "小火箭可以导入单一免费节点吗？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "可以。复制以 vmess://、vless://、ss:// 开头的单个节点链接后打开小火箭，软件会自动弹窗提示从剪贴板添加；或点击左上角扫码图标直接扫描节点二维码。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "小火箭免费节点频繁失效怎么办？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "公用免费节点存活期短，需在首页向下滑动刷新订阅拉取最新有效服务器；若需要长期稳定免折腾，建议参考【支持免费试用的机场精选】使用正规专线服务。"
+                }
+              }
+            ]
+          }
+        ]
       }
 ---
 
-# iOS Shadowrocket (小火箭) 免费节点添加、订阅导入与配置使用教程
+# 小火箭免费节点获取、添加与配置教程：iOS Shadowrocket 订阅导入与测速 (2026)
 
 <QuickAnswer>
-<strong>核心结论：</strong>在 iPhone / iPad 上使用 Shadowrocket（小火箭）配置免费节点的步骤：<strong>① 复制订阅 URL 后打开小火箭，点击右上角【+】号；② 类型选择【Subscribe (订阅)】，在 URL 栏粘贴链接并点击右上角【完成】；③ 首页下滑刷新自动拉取节点，点击【连通性测试】测试延迟；④ 选中延迟正常的绿色节点，全局路由建议选择【配置 (Config)】，打开最顶部的连接开关即可</strong>。
+<strong>核心结论：</strong>在 iPhone / iPad 上使用 Shadowrocket（小火箭）配置免费节点极其便捷：<strong>① 复制订阅 URL 后打开小火箭，点击右上角【+】号；② 类型选择【Subscribe (订阅)】，在 URL 栏粘贴链接并点击右上角【完成】；③ 首页下滑刷新自动拉取节点，点击【连通性测试】测试延迟；④ 选中延迟正常的绿色节点，全局路由建议选择【配置 (Config)】，打开最顶部的连接开关即可</strong>。详尽步骤与常见疑难请参阅 [小火箭怎么添加节点保姆级教程](/tutorial/shadowrocket-ios)。
 </QuickAnswer>
 
 ## 一、Shadowrocket（小火箭）客户端基础须知
@@ -37,7 +70,7 @@ Shadowrocket（俗称“小火箭”）是 iOS / iPadOS 生态中最具代表性
 ### 1. 正规下载与账号安全须知
 - Shadowrocket 为海外 App Store 付费应用（售价 $2.99 美元），**中国大陆区 App Store 无法直接搜索下载**。
 - **正规获取方式**：建议自行注册一个免费的海外（如美区、日区、港区）Apple ID，通过购买正规 App Store 礼品卡充值后在官方商店购买下载。
-- **安全警告**：切勿在 iPhone 的系统【设置】中直接登录网上来源不明的“共享 Apple ID”，否则可能触发 iCloud 锁机被勒索！仅允许在 App Store 应用内部切换临时账号下载。
+- **安全警告**：切勿在 iPhone 的系统【设置】中直接登录网上来源不明的“共享 Apple ID”，否则可能触发 iCloud 锁机被勒索！仅允许在 App Store 应用内部切换临时账号下载。详细下载图文见 [小火箭 iOS 安装教程](/tutorial/shadowrocket-ios)。
 
 ---
 
@@ -58,22 +91,21 @@ graph TD
 1. 复制您获取到的通用或小火箭订阅链接。
 2. 打开 Shadowrocket 客户端，点击主界面右上角的 **`+`** 按钮。
 3. 点击 **“类型 (Type)”**，将其切换为 **`Subscribe (订阅)`**（注意不是默认的 Shadowsocks）。
-4. 在 **“URL”** 输入框中长按粘贴刚才复制的订阅链接，在“备注”中可输入 `免费订阅`。
-5. 点击右上角的 **“完成 (Done)”** 保存。
+4. 在 **“URL”** 栏中长按粘贴链接，在“备注”中输入 `免费节点池`，点击右上角 **“完成 (Done)”**。
 
-### 步骤 2：自动拉取与连通性测试
-1. 回到小火箭首页，按住屏幕向下拉动刷新，客户端将自动连接服务器并展示该订阅下的所有节点。
-2. 点击列表中间的 **“连通性测试 (Connectivity Test)”**。
-3. 稍等 2 秒，每个节点右侧将出现延迟数值。选择显示为绿色数字（如 `35ms`）的节点。
+### 步骤 2：下拉更新与连通性测试
+1. 回到小火箭首页，用手指在屏幕中间下滑并松开，客户端将自动同步拉取最新的几十个节点。
+2. 点击列表中部的 **“连通性测试 (Connectivity Test)”**。
+3. 剔除显示红色 `Timeout` 的失效节点，选择显示为绿色毫秒数值的节点（如 `香港 01` 或 `日本 02`）。各地区节点的延迟特性与 AI 解锁表现详见 [国外常用节点地区选型对比](/free-node/regions)。
 
-### 步骤 3：配置全局路由与开启连接
-1. 在首页中部的 **“全局路由 (Global Routing)”** 选项中，确保选择为 **`配置 (Config)`**（此模式等同于 Clash 的规则分流，国内应用直连，海外应用走代理）。
-2. 拨动最顶部的 **主连接开关**。
-3. 首次开启时，iOS 系统会弹窗提示“Shadowrocket 想要添加 VPN 配置”，点击 **“允许 (Allow)”** 并输入手机锁屏密码即可完成初始化。
+### 步骤 3：开启主连接开关
+1. 确认中部的全局路由为 **`配置 (Config)`** 模式。
+2. 拨动顶部的连接开关，首次开启需在系统弹窗中允许添加 VPN 配置并输入 iPhone 锁屏密码。
+3. 状态栏出现 VPN 图标后，即可畅享海外网络。
 
 ---
 
-## 三、小火箭常见故障排查决策
+## 三、小火箭免费节点使用常见故障与修复
 
 <TroubleshootingBox
   title="小火箭使用常见问题与解决办法"
@@ -84,11 +116,11 @@ graph TD
     },
     {
       symptom: '连接开关开启后，手机状态栏出现 VPN 图标，但所有网页无法访问',
-      solution: '检查是否将全局路由误选为了未配置的【代理】模式，建议切回【配置】。若依然无法打开，点击底部【配置】-> 选择 default.conf 恢复默认分流规则。'
+      solution: '检查是否将全局路由误选为了未配置的【代理】模式，建议切回【配置】。若依然无法打开，点击底部【配置】-> 选择 default.conf 恢复默认分流规则。详见【已连接但无法上网排查】。'
     },
     {
       symptom: '使用一段时间后，所有节点延迟测试全部显示 Timeout',
-      solution: '免费节点已经失效。在订阅分组名称上向左滑动，点击【更新】拉取最新节点；若仍超时，说明该免费源已被封锁，需更换新的可用订阅源。'
+      solution: '免费节点已经失效。在订阅分组名称上向左滑动，点击【更新】拉取最新节点；若仍超时，说明该免费源已被封锁，可参考【支持免费试用的机场精选】获取稳定专线。'
     }
   ]"
 />
@@ -121,7 +153,7 @@ graph TD
   targetLink="/free-airport/recommendations"
   targetText="查看《2026 稳定新手机场实测推荐》"
 >
-  小火箭完美支持光速云的一键导入功能。享受全专线极速网络、原生解锁 TikTok、Instagram、YouTube 与 ChatGPT。
+  小火箭完美支持光速云的一键导入功能。享受全专线极速网络、原生解锁 TikTok、Instagram、YouTube 与 ChatGPT，或者参考 <a href="/free-airport/trials">免费机场试用精选</a> 获取高品质体验。
 </TopicBridge>
 
 <BrandCard

@@ -1,33 +1,66 @@
 ---
-title: Clash Verge Rev 电脑端从零安装、订阅导入与 TUN 模式配置保姆级教程 (2026 最新)
-description: 2026 最推荐的 Windows 与 macOS 电脑端开源代理客户端 Clash Verge Rev 完整图文教程，详解从 GitHub 官方下载、中文界面切换、订阅 URL 导入、规则分流、TUN 虚拟网卡开启及开机自启配置。
+title: Clash Verge Rev 电脑端配置教程：免费订阅链接导入、免费节点与 TUN 模式实战 (2026 最新)
+description: 2026 最新 Clash Verge Rev 电脑端配置教程：手把手教你在 Windows 与 Mac 上下载安装 Clash Verge Rev、导入免费订阅链接与配置文件、开启 TUN 虚拟网卡接管全机流量、设置分流规则并解决节点超时报错。
 head:
   - - script
     - type: application/ld+json
     - |
       {
         "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "headline": "Clash Verge Rev 电脑端从零安装、订阅导入与 TUN 模式配置保姆级教程 (2026 最新)",
-        "description": "手把手教您在 Windows 和 Mac 电脑上使用 Clash Verge Rev 配置代理与排除故障",
-        "author": {
-          "@type": "Organization",
-          "name": "机场免费团队"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "机场免费",
-          "logo": "https://jichangmianfei.my/logo.svg"
-        },
-        "datePublished": "2026-02-22",
-        "dateModified": "2026-08-20"
+        "@graph": [
+          {
+            "@type": "TechArticle",
+            "headline": "Clash Verge Rev 电脑端配置教程：免费订阅链接导入、免费节点与 TUN 模式实战 (2026 最新)",
+            "description": "手把手教您在 Windows 和 Mac 电脑上使用 Clash Verge Rev 配置代理、导入免费订阅与排除故障",
+            "author": {
+              "@type": "Organization",
+              "name": "机场免费团队"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "机场免费",
+              "logo": "https://jichangmianfei.my/logo.svg"
+            },
+            "datePublished": "2026-02-22",
+            "dateModified": "2026-11-12"
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Clash Verge Rev 怎么导入免费节点或免费订阅链接？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "在 Clash Verge Rev 中点击左侧【订阅 (Profiles)】，在顶部输入框粘贴获取到的免费订阅链接 URL，点击【导入】即可；若拥有本地 YAML 配置文件，点击右上角【新建】选择【本地文件】粘贴保存并激活即可。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Clash Verge Rev 里的 TUN 模式是什么时候开启的？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TUN 模式会虚拟出一张虚拟网卡，强制接管电脑上所有不遵循系统代理设置的软件流量（如 Git、命令行终端 CMD/PowerShell、部分联机游戏客户端）。日常仅使用浏览器上网只需开启系统代理即可。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "为什么退出软件后电脑无法正常打开国内网页？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "退出前请先在【设置】中关闭【系统代理】开关。若已意外关闭，打开 Windows【设置】→【网络和 Internet】→【代理】，将【使用代理服务器】手动关闭即可恢复。"
+                }
+              }
+            ]
+          }
+        ]
       }
 ---
 
-# Clash Verge Rev 电脑端从零安装、订阅导入与 TUN 模式配置保姆级教程 (2026 最新)
+# Clash Verge Rev 电脑端从零安装、免费订阅导入与 TUN 模式配置保姆级教程 (2026)
 
 <QuickAnswer>
-<strong>核心结论：</strong>Clash Verge Rev 是目前 PC 电脑端（Windows/Mac）最稳定易用的代理工具。标准上手流程为：<strong>① 从 GitHub 官方下载安装包并安装；② 在【订阅 (Profiles)】中粘贴机场订阅 URL 并点击导入；③ 鼠标单击激活该订阅配置；④ 在【代理 (Proxies)】中选择【规则模式】并测试节点延迟；⑤ 在【设置 (Settings)】中开启【系统代理 (System Proxy)】</strong>。需要接管游戏或命令行终端时，可一键开启【TUN 模式】。
+<strong>核心结论：</strong>Clash Verge Rev 是目前 PC 电脑端（Windows/Mac）最稳定易用的代理工具。标准上手流程为：<strong>① 从 GitHub 官方下载安装包并安装；② 在【订阅 (Profiles)】中粘贴机场订阅 URL（或免费订阅链接）并点击导入；③ 鼠标单击激活该配置卡片；④ 在【代理 (Proxies)】中选择【规则模式】并测试节点延迟；⑤ 在【设置 (Settings)】中开启【系统代理 (System Proxy)】</strong>。若需接管终端或联机游戏，可一键开启【TUN 模式】。
 </QuickAnswer>
 
 ## 一、为什么选择 Clash Verge Rev？
@@ -55,26 +88,26 @@ head:
 
 ```mermaid
 graph TD
-    Step1[1. 复制机场订阅 URL] --> Step2[2. 打开 Clash Verge Rev -> 点击左侧【订阅】]
+    Step1[1. 获取 Clash 订阅链接或免费节点源] --> Step2[2. 打开 Clash Verge Rev -> 点击左侧【订阅】]
     Step2 --> Step3[3. 在顶部输入框粘贴订阅 URL -> 点击【导入】]
     Step3 --> Step4[4. 左键点击该卡片(显示激活勾选状态)]
     Step4 --> Step5[5. 进入【代理】-> 模式选择【规则】-> 闪电测速]
     Step5 --> Step6[6. 点击选中低延迟节点 -> 在【设置】中开启【系统代理】]
 ```
 
-### 步骤 1：导入订阅
-1. 登录机场服务后台（如光速云），复制专属的 **Clash 订阅链接**。
+### 步骤 1：导入订阅（商业订阅或免费订阅均适用）
+1. 复制您的订阅链接（可以是正规商业机场如光速云的专属订阅，也可以是 [免费试用机场](/free-airport/trials) 或公共免费源）。若只有单节点链接，可参考 [Clash 免费节点与免配置 YAML 模板](/free-node/clash) 获取本地导入方法。
 2. 打开 Clash Verge Rev 软件，点击左侧菜单栏的 **“订阅 (Profiles)”**。
-3. 在顶部的“订阅链接输入框”中粘贴您的订阅 URL，在名称中输入备注（如 `光速云专线`），点击 **“导入 (Import)”** 按钮。
+3. 在顶部的“订阅链接输入框”中粘贴您的订阅 URL，在名称中输入备注（如 `专线订阅`），点击 **“导入 (Import)”** 按钮。
 4. 导入成功后，鼠标左键单击该配置卡片，使其边框变为蓝色高亮，代表已成功启用该配置。
 
 ### 步骤 2：选择节点与分流模式
 1. 点击左侧导航栏的 **“代理 (Proxies)”**。
 2. 在顶部模式选择中，确保选择为 **“规则 (Rule)”**。
-3. 点击右上角的 **⚡ 闪电图标** 进行批量测速，选择延迟较低的可用节点（例如 `香港 01` 或 `日本 01`）。
+3. 点击右上角的 **⚡ 闪电图标** 进行批量测速，选择延迟较低的可用节点（例如 `香港 01` 或 `日本 01`）。各地区节点的延迟与 AI 支持特性详见 [国外常用节点地区选型对比](/free-node/regions)。
 4. 在独立的分流组中（如 `OpenAI / ChatGPT`、`YouTube`、`Netflix`），您可以单独指定专用的海外节点。
 
-### 步骤 3：开启代理开关
+### 步骤 3：开启系统代理开关
 1. 点击左侧菜单栏的 **“设置 (Settings)”**。
 2. 找到 **“系统代理 (System Proxy)”** 选项，拨动开关将其开启。
 3. 此时打开浏览器访问 `google.com` 或 `youtube.com`，即可享受极速访问体验。
@@ -89,7 +122,7 @@ graph TD
 ### 开启步骤：
 1. 打开 Clash Verge Rev 的 **“设置 (Settings)”**。
 2. 找到 **“服务模式 (Service Mode)”**，点击右侧的 **“安装 (Install)”** 按钮（Windows 会弹出管理员授权提示，点击“是”）。
-3. 安装成功后，回到设置页面，找到 **“TUN 模式 (TUN Mode)”** 开关并将其开启即可。
+3. 安装成功后，回到设置页面，找到 **“TUN 模式 (TUN Mode)”** 开关并将其开启即可。若遇到驱动冲突请查阅 [TUN 模式网卡冲突排查指南](/troubleshooting/tun-mode-adapter-conflict)。
 
 ---
 
@@ -108,7 +141,7 @@ graph TD
     },
     {
       symptom: '退出软件后电脑无法正常打开国内网页（如百度）',
-      solution: '退出前请务必先在【设置】中关闭【系统代理】开关。若已关闭软件，可打开 Windows【设置】->【网络和Internet】->【代理】-> 手动关闭“使用代理服务器”。'
+      solution: '退出前请务必先在【设置】中关闭【系统代理】开关。若已关闭软件，可打开 Windows【设置】->【网络和Internet】->【代理】-> 手动关闭“使用代理服务器”。详见【代理关闭后电脑断网修复】。'
     }
   ]"
 />
@@ -119,6 +152,10 @@ graph TD
 
 <FaqAccordion :items="[
   {
+    q: 'Clash Verge Rev 怎么导入免费节点与订阅链接？',
+    a: '在左侧点击【订阅 (Profiles)】，在顶部直接粘贴免费订阅链接 URL 并点击【导入】即可；若手中只有单节点或 YAML 文本，可点击【新建】选择【本地文件】粘贴保存。'
+  },
+  {
     q: 'Clash Verge Rev 怎么设置开机自动启动并在后台静默运行？',
     a: '进入左侧【设置】页面，勾选“开机自启 (Auto Launch)”以及“静默启动 (Silent Start)”和“最小化到托盘”，这样每次电脑开机就会自动在后台静默运行代理服务。'
   },
@@ -128,7 +165,7 @@ graph TD
   },
   {
     q: '订阅多长时间需要更新一次？可以设置自动更新吗？',
-    a: '优质机场节点较少变动，通常 1~2 周更新一次即可。您也可以在【订阅】页面右键点击配置卡片，选择“编辑配置”，设置自动更新间隔为 24 小时。'
+    a: '优质机场节点较少变动，通常 1~2 周更新一次即可。免费节点则建议在【订阅】页面右键点击配置卡片，选择“编辑配置”，设置自动更新间隔为 12-24 小时。'
   }
 ]" />
 
@@ -141,11 +178,11 @@ graph TD
   targetLink="/free-airport/recommendations"
   targetText="查看《2026 稳定新手机场实测推荐》"
 >
-  Clash Verge Rev 搭配光速云 IEPL BGP 专线，享受一键导入、晚高峰 8K 秒播与全原生 AI 支持。
+  Clash Verge Rev 搭配光速云 IEPL BGP 专线，享受一键导入、晚高峰 8K 秒播与全原生 AI 支持，或查阅 <a href="/free-node/clash">Clash 免费节点与配置文件</a> 了解更多。
 </TopicBridge>
 
 <BrandCard
   brandName="光速云 (Guangshu Cloud)"
-  description="专为 Clash Verge Rev 深度优化。提供一键自动导入专属配置，全专线 BGP 节点保障，原生解锁全网流媒体与 ChatGPT，支持月付无捆绑。"
+  description="专为 Clash Verge Rev 深度优化。提供一键自动导入专属配置，全专线 BGP 节点保障，原生解锁全网流媒体与 ChatGPT，支持月付无捆绑与退款保障。"
   affLink="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y"
 />

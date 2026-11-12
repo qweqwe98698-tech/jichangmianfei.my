@@ -19,7 +19,7 @@
         <a
           href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow sponsored noopener"
           class="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-blue-600 text-xs font-medium border border-slate-200 dark:border-slate-700 transition-colors no-underline whitespace-nowrap"
         >
           官网注册 →

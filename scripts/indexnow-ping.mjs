@@ -9,7 +9,7 @@ const DIST_DIR = path.join(ROOT_DIR, 'docs', '.vitepress', 'dist')
 const SITEMAP_PATH = path.join(DIST_DIR, 'sitemap.xml')
 
 const HOST = 'jichangmianfei.my'
-const KEY = 'ccd96e5503a6448099a69a0f0da0de20'
+const KEY = '29cbe5476a9f45ae8ac2b934c0815377'
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`
 
 async function pingIndexNow() {

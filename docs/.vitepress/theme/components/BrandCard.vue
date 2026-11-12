@@ -70,7 +70,7 @@
       <a
         :href="affLink || 'https://sahude.gsyvipaff.com/#/?code=keqgvT5Y'"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow sponsored noopener"
         class="brand-btn"
       >
         <span>前往光速云官网直达开通 (优惠码: AMM)</span>

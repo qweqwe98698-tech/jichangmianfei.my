@@ -148,7 +148,7 @@
         <a
           href="https://sahude.gsyvipaff.com/#/?code=keqgvT5Y"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow sponsored noopener"
           class="calc-cta-btn w-full sm:w-auto"
         >
           <span>直达光速云开通推荐方案 →</span>

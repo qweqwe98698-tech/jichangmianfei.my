@@ -94,6 +94,7 @@ features:
     不知道机场和 VPN 的区别？想找一款适合日常查资料、看视频或使用 AI 工具的稳定机场？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
+    <a href="/free-airport/trials" class="px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-medium hover:underline">免费机场试用精选指南 →</a>
     <a href="/free-airport/how-to-choose" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">机场怎么选 8 项指标 →</a>
     <a href="/free-airport/recommendations" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">2026 新手机场实测推荐 →</a>
     <a href="/free-airport/free-vs-paid" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">免费 vs 付费机场对比 →</a>
@@ -122,7 +123,9 @@ features:
     不知道如何在 Windows、Mac、iPhone 或安卓手机上安装软件并导入节点订阅？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
+    <a href="/free-node/clash" class="px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-medium hover:underline">Clash 免费节点与配置文件 →</a>
     <a href="/tutorial/clash-verge-rev" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">Clash Verge Rev 电脑教程 →</a>
+    <a href="/free-node/v2rayn" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">v2rayN 节点测速配置 →</a>
     <a href="/tutorial/shadowrocket-ios" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">小火箭 iOS 配置教程 →</a>
     <a href="/tutorial/sub-conversion" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">订阅转换与格式解析 →</a>
   </div>
@@ -136,8 +139,9 @@ features:
     免费节点会不会记录密码？服务商能看到我的浏览记录吗？如何防范跑路风险？
   </p>
   <div class="flex flex-wrap gap-2 text-xs">
+    <a href="/free-node/regions" class="px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-medium hover:underline">国外节点延迟对比与选型 →</a>
     <a href="/free-airport/security-risks" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">免费机场安全与审计解析 →</a>
-    <a href="/free-airport/trials" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">支持免费体验的机场精选 →</a>
+    <a href="/free-node/public-free-nodes-security" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">开源免费节点安全审计 →</a>
     <a href="/about/disclaimer" class="px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 hover:text-blue-600">商业披露与免责声明 →</a>
   </div>
 </div>
